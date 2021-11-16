@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Logo from "../components/Logo.svelte"
+	let extraClass = "flat";
+</script>
+
+<Logo {extraClass}/>
+
+<label>
+	<input type=radio bind:group={extraClass} name="extraClass" value="flat">
+	flat
+</label>
+<label>
+	<input type=radio bind:group={extraClass} name="extraClass" value="square">
+	square
+</label>
