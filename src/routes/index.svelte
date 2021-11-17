@@ -13,3 +13,11 @@
 	<input type=radio bind:group={extraClass} name="extraClass" value="square">
 	square
 </label>
+<label>
+	<input type=radio bind:group={extraClass} name="extraClass" value="thin">
+	thin
+</label>
+<label>
+	<input type=radio bind:group={extraClass} name="extraClass" value="url">
+	url
+</label>

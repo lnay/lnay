@@ -1,0 +1,79 @@
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: italic;
+}
+
+div.logo.square {
+	& > span.name {
+		display: inline-block;
+		& > span {
+			display: block;
+			text-align: right;
+		}
+	}
+	& > span.coords {
+		margin-left: 0.5em;
+		display: inline-block;
+		padding-left: 3px;
+		padding-right: 3px;
+		border-left: solid black 1.5px;
+		border-right: solid black 1.5px;
+		border-radius: 4px / 20px;
+		transform: skew(-5deg);
+		& > span {
+			display: block;
+			font-size: 0.8rem;
+			margin: 0;
+			padding: 0;
+			margin-top: -0.1rem;
+			&:not(:first-child){
+				margin-top: -0.4rem;
+			}
+		}
+	}
+}
+
+div.logo.thin {
+	& > span.name {
+		display: block;
+		& > span{
+			display: block;
+			text-align: left;
+		}
+	}
+	& > span.coords {
+		display: block;
+		&::after{
+			content:")";
+		}
+		&::before{
+			content: "(";
+		}
+		& > span:not(:last-child)::after {
+			content: ",";
+		}
+	}
+}
+
+div.logo.flat{
+	& > span.name > span {
+		margin-right: 0.3em;
+	}
+	& > span.coords {
+		&::after{
+			content:")";
+		}
+		&::before{
+			content: "(";
+		}
+		& > span:not(:last-child)::after {
+			content: ",";
+		}
+	}
+}
+
+div.logo.url{
+	& > span.coords::before {
+		content:".";
+	}
+}
