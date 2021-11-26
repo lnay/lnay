@@ -3,8 +3,6 @@
 	let extraClass = "flat";
 </script>
 
-<Logo {extraClass}/>
-
 <label>
 	<input type=radio bind:group={extraClass} name="extraClass" value="flat">
 	flat
@@ -21,3 +19,5 @@
 	<input type=radio bind:group={extraClass} name="extraClass" value="url">
 	url
 </label>
+
+<Logo {extraClass}/>
