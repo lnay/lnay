@@ -1,6 +1,5 @@
-<style lang="scss" src="./Logo.scss"/>
-
 <script>
+	import "./Logo.scss";
 	export let extraClass = "thin";
 </script>
 
