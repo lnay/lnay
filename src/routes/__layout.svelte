@@ -2,15 +2,16 @@
 	import "./layout.scss";
 	import Logo from "./components/Logo.svelte";
 	import Nav from "./navbar.svelte";
-	let containerClass = "cover-container";
 	export let pagepath;
-
+	$: containerClass = pagepath==='/'?"cover-container":"container";
 </script>
+
 <script context="module">
 	export function load({page}){
 		return {props : {pagepath : page.path}};
 	}
 </script>
+
 <!--<meta name="theme-color" content="#7952b3">-->
 <svelte:head>
 	<title>Lukidean Geometry</title>
@@ -39,16 +40,6 @@
 			<p class="lead">
 				<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
 			</p>
-			<div>
-				<label>
-					<input type=radio bind:group={containerClass} name="containerClass" value="container">
-					Normal container
-				</label>
-				<label>
-					<input type=radio bind:group={containerClass} name="containerClass" value="cover-container">
-					Cover container
-				</label>
-			</div>
 			<slot></slot>
 		</main>
 
