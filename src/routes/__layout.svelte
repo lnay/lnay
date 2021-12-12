@@ -38,7 +38,7 @@
 				The current page is <em>{pagepath}</em>
 			</p>
 			<p class="lead">
-				<a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+				<a href="/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
 			</p>
 			<slot></slot>
 		</main>
