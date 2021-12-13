@@ -19,31 +19,37 @@
 
 <style lang="scss">
 	@use "../../node_modules/bootstrap/scss/bootstrap.scss";
-	div.outer {
-		@extend .d-flex;
-		@extend .h-100;
-		@extend .text-center;
-		@extend .text-white;
-		@extend .bg-dark;
-	}
-	div.inner {
-		@extend .d-flex;
-		@extend .w-100;
-		@extend .h-100;
-		@extend .p-3;
-		@extend .mx-auto;
-		@extend .flex-column;
-		transition: max-width 0.5s ease-out;
-	}
-	header {
-		@extend .mb-auto;
-	}
-	main {
-		@extend .px-3;
-	}
-	footer {
-		@extend .mt-auto;
-		@extend .text-white-50;
+	:global {
+		div.outer {
+			@extend .d-flex;
+			@extend .h-100;
+			@extend .text-center;
+			@extend .text-white;
+			@extend .bg-dark;
+		}
+		div.inner {
+			@extend .d-flex;
+			@extend .w-100;
+			@extend .h-100;
+			@extend .p-3;
+			@extend .mx-auto;
+			@extend .flex-column;
+			transition: max-width 0.5s ease-out;
+		}
+		header {
+			@extend .mb-auto;
+		}
+		main {
+			@extend .px-3;
+		}
+		footer {
+			@extend .mt-auto;
+			@extend .text-white-50;
+		}
+		header > div:first-child {
+			@extend .float-md-start;
+			@extend .mb-0;
+		}
 	}
 
 </style>
@@ -52,7 +58,7 @@
 <div class="outer">
 	<div class="{containerClass} inner">
 		<header>
-			<div class="float-md-start mb-0"><Logo extraClass="flat"/></div>
+			<Logo extraClass="flat"/>
 			<Nav pagepath={pagepath}/>
 		</header>
 
