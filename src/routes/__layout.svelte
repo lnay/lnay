@@ -17,6 +17,36 @@
 	<title>Lukidean Geometry</title>
 </svelte:head>
 
+<div class="outer">
+	<div class="{containerClass} inner">
+		<header>
+			<Logo extraClass="flat"/>
+			<Nav pagepath={pagepath}/>
+		</header>
+
+		<main>
+			<h1>Cover your page.</h1>
+			<p>
+				Cover is a one-page template for building simple and beautiful home
+				pages. Download, edit the text, and add your own fullscreen background
+				photo to make it your own.
+			</p>
+			<p>
+				The current page is <em>{pagepath}</em>
+			</p>
+			<slot></slot>
+		</main>
+
+		<footer>
+		<p>
+			Cover template for
+			<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
+			, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
+		</p>
+		</footer>
+	</div>
+</div>
+
 <style lang="scss">
 	@use "../../node_modules/bootstrap/scss/bootstrap.scss";
 	:global {
@@ -50,40 +80,13 @@
 			@extend .float-md-start;
 			@extend .mb-0;
 		}
+		body {
+			text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+			box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+		}
 	}
 
+	.cover-container {
+		max-width: 42em;
+	}
 </style>
-
-
-<div class="outer">
-	<div class="{containerClass} inner">
-		<header>
-			<Logo extraClass="flat"/>
-			<Nav pagepath={pagepath}/>
-		</header>
-
-		<main>
-			<h1>Cover your page.</h1>
-			<p>
-				Cover is a one-page template for building simple and beautiful home
-				pages. Download, edit the text, and add your own fullscreen background
-				photo to make it your own.
-			</p>
-			<p>
-				The current page is <em>{pagepath}</em>
-			</p>
-			<p class="lead">
-				<a href="/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-			</p>
-			<slot></slot>
-		</main>
-
-		<footer>
-		<p>
-			Cover template for
-			<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
-			, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
-		</p>
-		</footer>
-	</div>
-</div>
