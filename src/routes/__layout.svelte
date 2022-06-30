@@ -8,7 +8,7 @@
 
 <script context="module">
 	export function load({url}){
-		return {props : {pagepath : url}};
+		return {props : {pagepath : url.pathname}};
 	}
 </script>
 
