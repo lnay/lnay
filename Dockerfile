@@ -1,4 +1,4 @@
-FROM node:18-alpine3.15
+FROM node:18-alpine3.15 as builder
 
 # install dependencies
 WORKDIR /app
@@ -10,5 +10,5 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3000
-CMD ["node", "./.svelte-kit/output/server/app.js"]
+FROM nginx as deployment
+COPY --from=builder /app/build /usr/share/nginx/html
