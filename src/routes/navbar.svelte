@@ -10,10 +10,10 @@
 			route: "/blog",
 			name: "Blog"
 		},
-		{
+		/*{
 			route: "/contact",
 			name: "Contact"
-		}
+		}*/
 	];
 	
 </script>
