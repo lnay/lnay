@@ -1,5 +1,5 @@
 {
-	"name": "my-svelte-app-skeleton",
+	"name": "landing-page",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",

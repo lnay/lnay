@@ -7,8 +7,8 @@
 </script>
 
 <script context="module">
-	export function load({page}){
-		return {props : {pagepath : page.path}};
+	export function load({url}){
+		return {props : {pagepath : url}};
 	}
 </script>
 
