@@ -52,5 +52,32 @@
 			"abstract":"When trying to narrow down the possibilities for the locations of tilt walls, the typical strategy is to find potential semistabilizers who’s Chern characters satisfy a set of inequalities which would be satisfied by genuine ones (including Bogomolov-Gieseker). In 2020, Benjamin Schmidt published a program to compute the possibilities, however the running time suffered from a conservative estimate for a bound on the ranks of tilt semistabilizers. The work I want to present is a set of refinements on this bound, one in the form of a pragmatic formula to calculate by hand which can be as small as a quarter of the original bound. As well as more complicated formulae with extra parameters which are better suited in the context of a newer computer program. This newer program gives instantaneous results in certain examples where the original takes over an hour, and can easily be tried from your browser at https://pseudowalls.gitlab.io/webapp/tilt.sycamore/.",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/research/icl-poster-2023/-/jobs/artifacts/master/raw/poster.pdf?job=build"
 		}
+	],
+	"passive_attendance": [
+		{
+			"name":"Day of Tropical Geometry",
+			"location":"St Andrews University",
+			"date":"2022-04-11",
+			"url":"https://www.yoavlen.com/day-of-tropical-geometry"
+		},
+		{
+			"name":"GAeL XXIX",
+			"location":"Université Paris-Saclay, Orsay",
+			"date":{
+				"from":"2022-05-23",
+				"to":"2022-05-27"
+			},
+			"url":"https://sites.google.com/view/gaelxxix"
+		},
+		{
+			"name":"VBAC 2022",
+			"location":"Warwick University",
+			"date":{
+				"from":"2022-07-25",
+				"to":"2022-07-29"
+			},
+			"url":"http://vbac.wikidot.com/vbac2022"
+		}
+
 	]
 }
