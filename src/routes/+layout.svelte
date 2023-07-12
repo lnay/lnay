@@ -49,41 +49,39 @@
 
 <style lang="scss">
 	@use "../../node_modules/bootstrap/scss/bootstrap.scss";
-	:global {
-		div.outer {
-			@extend .d-flex;
-			@extend .h-100;
-			@extend .text-center;
-			@extend .text-white;
-			@extend .bg-dark;
-		}
-		div.inner {
-			@extend .d-flex;
-			@extend .w-100;
-			@extend .h-100;
-			@extend .p-3;
-			@extend .mx-auto;
-			@extend .flex-column;
-			transition: max-width 0.5s ease-out;
-		}
-		header {
-			@extend .mb-auto;
-		}
-		main {
-			@extend .px-3;
-		}
-		footer {
-			@extend .mt-auto;
-			@extend .text-white-50;
-		}
-		header > div:first-child {
-			@extend .float-md-start;
-			@extend .mb-0;
-		}
-		body {
-			text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-			box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-		}
+	:global(div.outer) {
+		@extend .d-flex;
+		@extend .h-100;
+		@extend .text-center;
+		@extend .text-white;
+		@extend .bg-dark;
+	}
+	:global(div.inner) {
+		@extend .d-flex;
+		@extend .w-100;
+		@extend .h-100;
+		@extend .p-3;
+		@extend .mx-auto;
+		@extend .flex-column;
+		transition: max-width 0.5s ease-out;
+	}
+	:global(header) {
+		@extend .mb-auto;
+	}
+	:global(main) {
+		@extend .px-3;
+	}
+	:global(footer) {
+		@extend .mt-auto;
+		@extend .text-white-50;
+	}
+	:global(header > div:first-child) {
+		@extend .float-md-start;
+		@extend .mb-0;
+	}
+	:global(body) {
+		text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+		box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 	}
 
 	.cover-container {
