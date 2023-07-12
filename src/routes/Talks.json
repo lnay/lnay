@@ -37,6 +37,28 @@
 		},
 		{}
 	],
+	"reading_group_talks":[
+		{
+			"group": "Commutative Algebra (Eisenbud)",
+			"date": "2022-11-04",
+			"topic": "Example workthrough: primary decomposition"
+		},
+		{
+			"group": "Commutative Algebra (Eisenbud)",
+			"date": "2022-12-10",
+			"topic": "Flat families"
+		},
+		{
+			"group": "Commutative Algebra (Eisenbud)",
+			"date": "2023-03-03",
+			"topic": "Constructive proof of syzygy theorem (application of Groebner bases)"
+		},
+		{
+			"group": "Algebraic Geometry (Rising Sea)",
+			"date": "2023-05-05",
+			"topic": "Closed embeddings"
+		}
+	],
 	"posters":[
 		{
 			"event":{
