@@ -1,0 +1,88 @@
+{
+	"courses" : [
+		{
+			"name":"Maths Base",
+			"level":"undergraduate (yr 2)",
+			"description":"Drop in session for students to ask for help in any of their courses",
+			"tutoring": [
+				{
+					"Academic_year" : "2020-21",
+					"block": 1
+				},
+				{
+					"Academic_year" : "2022-23",
+					"block": 1
+				}
+			]
+		},
+		{
+			"name":"Computing and Numerics",
+			"level":"undergraduate (yr 2)",
+			"description":"Introductory Python course applied to numerical methods (such as integral estimates) alongside teaching good coding practices.",
+			"tutoring": [
+				{
+					"Academic_year" : "2020-21",
+					"block": 1
+				},
+				{
+					"Academic_year" : "2021-22",
+					"block": 1
+				},
+				{
+					"Academic_year" : "2022-23",
+					"block": 1
+				}
+			]
+		},
+		{
+			"name":"Facets of Mathematics",
+			"level":"undergraduate (yr 2)",
+			"description":"Course driven by 3 project-oriented topics making use of a variety of mathematical related soft skills including latex typesetting, poster making & presentation, and numeric & symbolic computing. Mathematical theory involved in course included statistics, finite difference methods, and projective geometry.",
+			"tutoring": [
+				{
+					"Academic_year" : "2022-23",
+					"block": 0
+				}
+			]
+		},
+		{
+			"name":"Python Programming",
+			"level":"masters",
+			"description":"Introductory Python course touching on coding practices and applications around data analysis (numpy/scipy/pandas...). Concluding in open-ended group project analysing open datasets.",
+			"tutoring": [
+				{
+					"Academic_year" : "2021-22",
+					"block": 0
+				},
+				{
+					"Academic_year" : "2022-23",
+					"block": 0
+				}
+			]
+		},
+		{
+			"name":"Honours Analysis Skills",
+			"level":"undergraduate (yr 3)",
+			"description":"Presentation skills workshop with topics around real analysis"
+			"tutoring": [
+				{
+					"Academic_year" : "2021-22",
+					"block": 0
+				}
+			]
+		}
+	],
+
+	"teaching_blocks":[
+		{
+			"number":1,
+			"name": "Teaching Block 1",
+			"months":"Sept-Dec"
+		},
+		{
+			"number":2,
+			"name": "Teaching Block 2",
+			"months":"Jan-Apr"
+		}
+	]
+}
