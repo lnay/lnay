@@ -1,5 +1,5 @@
 <script>
-	import Logo from "./components/Logo.svelte"
+	import Logo from "$lib/Logo.svelte"
 	let extraClass = "flat";
 </script>
 

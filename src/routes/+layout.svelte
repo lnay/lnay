@@ -1,7 +1,7 @@
 <script>
 	import "./layout.scss";
-	import Logo from "./components/Logo.svelte";
-	import Nav from "./navbar.svelte";
+	import Logo from "$lib/Logo.svelte";
+	import Nav from "$lib/navbar.svelte";
 	export let pagepath;
 	$: containerClass = pagepath==='/'?"cover-container":"container";
 </script>
