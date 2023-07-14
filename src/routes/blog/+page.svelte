@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let param = " ";
 	import TalkData from "$data/Talks.json";
 </script>

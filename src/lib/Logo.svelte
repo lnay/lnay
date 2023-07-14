@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import "./Logo.scss";
 	export let extraClass = "thin";
 </script>

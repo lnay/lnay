@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import "./layout.scss";
 	import Logo from "$lib/Logo.svelte";
 	import Nav from "$lib/navbar.svelte";

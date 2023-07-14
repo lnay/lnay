@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Logo from "$lib/Logo.svelte";
 	import TeachingData from "$data/Teaching.json";
 	let extraClass = "flat";
