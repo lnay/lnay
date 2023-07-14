@@ -2,14 +2,9 @@
 	import "./layout.scss";
 	import Logo from "$lib/Logo.svelte";
 	import Nav from "$lib/navbar.svelte";
-	export let pagepath;
-	$: containerClass = pagepath==='/'?"cover-container":"container";
-</script>
 
-<script context="module">
-	export function load({url}){
-		return {props : {pagepath : url.pathname}};
-	}
+	import { page } from '$app/stores';
+	$: containerClass = $page.url.pathname==='/'?"cover-container":"container";
 </script>
 
 <!--<meta name="theme-color" content="#7952b3">-->
@@ -21,7 +16,7 @@
 	<div class="{containerClass} inner">
 		<header>
 			<Logo extraClass="flat"/>
-			<Nav pagepath={pagepath}/>
+			<Nav/>
 		</header>
 
 		<main>
@@ -32,7 +27,7 @@
 				photo to make it your own.
 			</p>
 			<p>
-				The current page is <em>{pagepath}</em>
+				The current page is <em>{$page.url.pathname}</em>
 			</p>
 			<slot></slot>
 		</main>

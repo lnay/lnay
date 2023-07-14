@@ -1,5 +1,9 @@
-<script>
-	export let pagepath;
+<script lang="ts">
+
+	import { page } from '$app/stores';
+	let pagepath: string;
+	$: pagepath = $page.url.pathname;
+	
 
 	let nav_items = [
 		{
