@@ -1,12 +1,10 @@
 <script lang="ts">
 	import Logo from "$lib/Logo.svelte";
-	import TeachingData from "$data/Teaching.json";
+	import Teaching from "$lib/Teaching.svelte";
 	let extraClass = "flat";
 </script>
 
-<p>
-	{JSON.stringify(TeachingData)}
-</p>
+<Teaching/>
 
 <label>
 	<input type=radio bind:group={extraClass} name="extraClass" value="flat">
