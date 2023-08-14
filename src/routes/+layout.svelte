@@ -47,7 +47,7 @@
 	:global(div.outer) {
 		@extend .d-flex;
 		@extend .h-100;
-		@extend .text-center;
+		//@extend .text-center;
 		@extend .text-white;
 		@extend .bg-dark;
 	}
@@ -77,6 +77,7 @@
 	:global(body) {
 		text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 		box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+		text-decoration: normal;
 	}
 
 	.cover-container {

@@ -1,6 +1,13 @@
 <script lang="ts">
+    import { marked } from 'marked';
     import {courses, teaching_blocks } from "$data/Teaching.json"
 </script>
+
+{@html marked(`
+# Teaching
+
+I am involved with teaching in the School of Mathematics at the University of Edinburgh.
+`)}
 
 <table border="1" frame="void" rules="all">
 {#each courses as course}
@@ -16,7 +23,7 @@
         </td>
         <td>
             <ul>
-            {#each course.tutoring.sort() as t}
+            {#each course.tutoring.sort().reverse() as t}
                 <li>{teaching_blocks[t.block].months} {t.Academic_year}</li>
             {/each}
             </ul>
@@ -95,8 +102,5 @@
     }
     tr {
         transition: height 0.5s;
-    }
-    * {
-        font-style: normal;
     }
 </style>

@@ -1,5 +1,14 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+h1{
+	text-align: center;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+p {
+	text-align: justify;
+	justify-content: space-between;
+}
+
 .bd-placeholder-img {
 	font-size: 1.125rem;
 	text-anchor: middle;
