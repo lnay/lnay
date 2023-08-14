@@ -19,6 +19,4 @@ jobs:
         version: 8
     - run: pnpm install --frozen-lockfile
     - run: pnpm run build
-    - run: mv build gitlab-pages
-    - name: Upload Pages artifact
-      uses: actions/deploy-pages@v1.2.9
+    - run: mv build docs
