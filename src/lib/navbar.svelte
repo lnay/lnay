@@ -10,9 +10,15 @@
 			name: "Home"
 		},
 		{
+			route: "/pseudowalls",
+			name: "Pseudowalls"
+		},
+		/*
+		{
 			route: "/blog",
 			name: "Blog"
 		},
+		*/
 		/*{
 			route: "/contact",
 			name: "Contact"

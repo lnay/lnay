@@ -20,24 +20,10 @@
 		</header>
 
 		<main>
-			<h1>Cover your page.</h1>
-			<p>
-				Cover is a one-page template for building simple and beautiful home
-				pages. Download, edit the text, and add your own fullscreen background
-				photo to make it your own.
-			</p>
-			<p>
-				The current page is <em>{$page.url.pathname}</em>
-			</p>
 			<slot></slot>
 		</main>
 
 		<footer>
-		<p>
-			Cover template for
-			<a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>
-			, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
-		</p>
 		</footer>
 	</div>
 </div>

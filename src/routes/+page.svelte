@@ -1,26 +1,22 @@
 <script lang="ts">
-	import Logo from "$lib/Logo.svelte";
 	import Teaching from "$lib/Teaching.svelte";
-	let extraClass = "flat";
+    import { marked } from 'marked';
 </script>
 
+{@html marked(`
+# About Me
+
+I am a PhD student in the [School of Mathematics](https://www.maths.ed.ac.uk/)
+at the [University of Edinburgh](https://www.ed.ac.uk/), supervised by
+[Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia).
+In the past I was a software engineer on the compiler team at
+[Micro Focus](https://www.opentext.com/microfocus).
+
+I study walls on Bridgeland stability conditions for complexes of coherent
+sheaves on Picard Rank 1 surfaces and threefolds
+(an area of Algebraic Geometry).
+At the moment, I'm interested on automating methods for finding walls, find out more
+about this [here](pseudowalls).
+`)}
+
 <Teaching/>
-
-<label>
-	<input type=radio bind:group={extraClass} name="extraClass" value="flat">
-	flat
-</label>
-<label>
-	<input type=radio bind:group={extraClass} name="extraClass" value="square">
-	square
-</label>
-<label>
-	<input type=radio bind:group={extraClass} name="extraClass" value="thin">
-	thin
-</label>
-<label>
-	<input type=radio bind:group={extraClass} name="extraClass" value="url">
-	url
-</label>
-
-<Logo {extraClass}/>

@@ -6,7 +6,9 @@
 {@html marked(`
 # Teaching
 
-I am involved with teaching in the School of Mathematics at the University of Edinburgh.
+I am involved with teaching in the School of Mathematics at the University of Edinburgh,
+where I have received an
+[Associate Fellowship of the Higher Education Academy](https://www.ed.ac.uk/institute-academic-development/learning-teaching/cpd/teaching-award).
 `)}
 
 <table border="1" frame="void" rules="all">
