@@ -17,7 +17,7 @@ jobs:
     - uses: pnpm/action-setup@v2
       with:
         version: 8
-    - run: pnpm ci
+    - run: pnpm install --frozen-lockfile
     - run: pnpm run build
     - run: mv build gitlab-pages
     - name: Upload Pages artifact
