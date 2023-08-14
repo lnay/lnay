@@ -15,7 +15,8 @@
 <div class="outer">
 	<div class="{containerClass} inner">
 		<header>
-			<Logo extraClass="flat"/>
+			Luke Naylor
+			<!--<Logo extraClass="flat"/>-->
 			<Nav/>
 		</header>
 
