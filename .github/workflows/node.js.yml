@@ -19,4 +19,13 @@ jobs:
         version: 8
     - run: pnpm install --frozen-lockfile
     - run: pnpm run build
-    - run: mv build docs
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        # Upload entire repository
+        path: 'build'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
