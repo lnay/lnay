@@ -2,19 +2,21 @@
     import {courses, teaching_blocks } from "$data/Teaching.json"
 </script>
 
-<table>
+<table border="1" frame="void" rules="all">
 {#each courses as course}
     <tr>
         <td>
             <details>
                 <summary>{course.name}</summary>
-                <p style="text-align:right;font-style:italic;margin:0;font-size:0.9em;">course level: {course.level}</p>
+                <p class="courselevel">
+                    <span class="label">course level:</span> {course.level}
+                </p>
                 <p>{course.description}</p>
             </details>
         </td>
         <td>
             <ul>
-            {#each course.tutoring.sort().reverse() as t}
+            {#each course.tutoring.sort() as t}
                 <li>{teaching_blocks[t.block].months} {t.Academic_year}</li>
             {/each}
             </ul>
@@ -31,13 +33,14 @@
         width: 100%;
     }
     td {
-        border: 1px solid black;
-        padding: 0.5em;
+        border: 1px solid rgba(255,255,255,0.3);
+        padding: 0.3em;
         text-align: left;
         vertical-align: top;
         overflow-y: clip;
         &:nth-child(2) {
-            width: 13em;
+            font-size: 0.8em;
+            width: 12.5em;
             text-align: right;
             padding-bottom: 0;
             position: relative;
@@ -75,6 +78,18 @@
             }
             :not(summary) {
                 margin-left: 2em;
+            }
+            p.courselevel {
+                text-align: right;
+                font-style: italic;
+                margin: 0;
+                font-size: 0.9em;
+                color: rgba(255,255,255,0.8);
+                span.label {
+                    font-style: italic;
+                    font-weight: bold;
+                    color: rgba(255,255,255,0.5);
+                }
             }
         }
     }
