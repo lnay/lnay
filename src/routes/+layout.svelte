@@ -9,7 +9,7 @@
 
 <!--<meta name="theme-color" content="#7952b3">-->
 <svelte:head>
-	<title>Lukidean Geometry</title>
+	<title>Luke Naylor</title>
 </svelte:head>
 
 <div class="outer">
