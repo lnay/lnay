@@ -45,7 +45,7 @@
 		@extend .p-3;
 		@extend .mx-auto;
 		@extend .flex-column;
-		transition: max-width 0.5s ease-out;
+		transition: max-width 0.1s ease-in;
 	}
 	:global(header) {
 		@extend .mb-auto;
