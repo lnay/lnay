@@ -6,11 +6,11 @@
 
 	let nav_items = [
 		{
-			route: "./",
+			route: "/",
 			name: "Home"
 		},
 		{
-			route: "./pseudowalls",
+			route: "/pseudowalls",
 			name: "Pseudowalls"
 		},
 		/*
@@ -28,7 +28,7 @@
 </script>
 <nav class="nav nav-masthead justify-content-center float-md-end">
 	{#each nav_items as {route, name}}
-		<a class="nav-link {"."+pagepath===route?'active':''}"
+		<a class="nav-link {pagepath===route?'active':''}"
 		   aria-current="page"
 		   href="{route}">
 			{name}
