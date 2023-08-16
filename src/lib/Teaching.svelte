@@ -66,15 +66,21 @@ where I have received an
                 &:after {
                     background: transparent;
                 }
-                & ul {
-                    height: auto; 
+                ul {
+                    line-height: 1em;
+                    height: auto;
+                    padding-bottom: 0.3em;
+                }
+            }
+            &:not(:hover) {
+                ul {
+                    line-height: 0.8em;
+                    height: 1em;
                 }
             }
         }
         ul {
-            height: 1em;
             margin-bottom: 0;
-            line-height: 0.8em;
             li {
                 list-style-type: none;
                 font-style: italic;
