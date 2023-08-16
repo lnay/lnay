@@ -37,6 +37,7 @@
 		//@extend .text-center;
 		@extend .text-white;
 		@extend .bg-dark;
+		min-height: 100vh;
 	}
 	:global(div.inner) {
 		@extend .d-flex;
