@@ -16,7 +16,7 @@ I study walls on Bridgeland stability conditions for complexes of coherent
 sheaves on Picard Rank 1 surfaces and threefolds
 (an area of Algebraic Geometry).
 At the moment, I'm interested on automating methods for finding walls, find out more
-about this [here](pseudowalls).
+about this on the [Pseudowalls page](pseudowalls).
 `)}
 
 <Teaching/>
