@@ -2,6 +2,9 @@
 	import Teaching from "$lib/Teaching.svelte";
     import { marked } from 'marked';
 </script>
+<svelte:head>
+  <meta name="description" content="Home page of Luke Naylor's personal site" />
+</svelte:head>
 
 {@html marked(`
 # About Me

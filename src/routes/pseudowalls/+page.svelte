@@ -1,3 +1,6 @@
+<svelte:head>
+  <meta name="description" content="Section of Luke Naylor's personal site about using programming libraries for computing possibilities for walls of tilt Bridgeland stabilities on Picard rank 1 surfaces." />
+</svelte:head>
 <script lang="ts">
     import { marked } from 'marked';
 </script>
