@@ -31,15 +31,18 @@
 
 <style lang="scss">
 	@use "../../node_modules/bootstrap/scss/bootstrap.scss";
-	:global(div.outer) {
+	div.outer {
 		@extend .d-flex;
 		@extend .h-100;
-		//@extend .text-center;
-		@extend .text-white;
-		@extend .bg-dark;
 		min-height: 100vh;
+		--foreground-color: var(--bs-black-rgb);
+		--background-color: var(--bs-white-rgb);
+		--foreground-color-opaque: rgba(var(--foreground-color), 1);
+		--background-color-opaque: rgba(var(--background-color), 1);
+		color: var(--foreground-color-opaque);
+		background-color: var(--background-color-opaque);
 	}
-	:global(div.inner) {
+	div.inner {
 		@extend .d-flex;
 		@extend .w-100;
 		@extend .h-100;
@@ -48,24 +51,26 @@
 		@extend .flex-column;
 		transition: max-width 0.1s ease-in;
 	}
-	:global(header) {
+	header {
 		@extend .mb-auto;
 	}
-	:global(main) {
+	main {
 		@extend .px-3;
+		--bs-code-color: #f7f;
 	}
-	:global(footer) {
+	footer {
 		@extend .mt-auto;
-		@extend .text-white-50;
+		//@extend .text-white-50;
 	}
 	:global(header > div:first-child) {
 		@extend .float-md-start;
 		@extend .mb-0;
 	}
-	:global(body) {
-		text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-		box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-		text-decoration: normal;
+	@media (prefers-color-scheme: dark) {
+		div.outer {
+			--foreground-color: var(--bs-white-rgb);
+			--background-color: var(--bs-dark-rgb);
+		}
 	}
 
 	.cover-container {

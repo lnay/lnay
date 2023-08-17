@@ -42,7 +42,7 @@ where I have received an
         width: 100%;
     }
     td {
-        border: 1px solid rgba(255,255,255,0.3);
+        border: 1px solid rgba(var(--foreground-color),0.3);
         padding: 0.3em;
         text-align: left;
         vertical-align: top;
@@ -60,7 +60,7 @@ where I have received an
                 width: 100%;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient(transparent, #212529);
+                background: linear-gradient(transparent, var(--background-color-opaque) );
             }
             &:hover{
                 &:after {
@@ -99,11 +99,12 @@ where I have received an
                 font-style: italic;
                 margin: 0;
                 font-size: 0.9em;
-                color: rgba(255,255,255,0.8);
+                color: rgba(var(--foreground-color),0.7);
+                font-weight: bold;
                 span.label {
                     font-style: italic;
-                    font-weight: bold;
-                    color: rgba(255,255,255,0.5);
+                    font-weight: lighter;
+                    color: rgba(var(--foreground-color),0.5);
                 }
             }
         }
