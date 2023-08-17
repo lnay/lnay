@@ -40,7 +40,21 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="layer1" />
+   <style>
+    @media (prefers-color-scheme: dark) {
+      #path109-6 {
+        fill: #ffffff !important;
+      }
+      #path105-5 {
+        fill: #3388ff !important;
+      }
+      #path220-1 {
+        fill: #888888 !important;
+      }
+    }
+  </style>
+  <defs
      id="defs1" /><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -50,7 +64,7 @@
          id="layer8-8"
          inkscape:label="good x"
          style="display:inline"><path
-           style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#111111;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
            d="M 42.679514,204.86243 H 33.20747 l 5.165059,-7.34369 5.165093,-7.34369 16.218851,-23.09251 16.218815,-23.0925 -3.177687,-4.38717 -3.177652,-4.38715 L 54.500158,113.42154 39.380402,91.62732 37.750531,89.25837 h 9.579427 9.365738 l 14.143842,20.32361 14.143877,20.32362 0.520525,0.66721 0.468109,-0.56868 14.118361,-20.37285 14.11841,-20.37287 h 9.37069 9.60798 l -1.6235,2.36895 -15.14065,21.79422 -15.14063,21.79418 -3.168951,4.3833 -3.168947,4.38331 16.223008,23.09636 16.22297,23.09636 5.1581,7.34368 5.15812,7.34373 h -9.45176 -9.45174 l -16.34815,-23.24495 -16.348163,-23.24491 -0.557896,-0.7484 -0.898667,1.28089 -16.24952,22.97867 -16.249557,22.97867 z"
            id="path109-6"
            inkscape:label="good x"
@@ -58,7 +72,7 @@
          id="layer7-7"
          inkscape:label="good y"
          style="display:inline"><path
-           style="fill:#555555;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#0066ff;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
            d="m 52.076685,204.86236 21.645254,-30.59067 20.541466,-29.01053 0.647504,-0.90014 0.06711,-0.10325 -36.945712,-53.007542 -1.407154,-1.98095 h 10.373728 8.48122 l 29.153939,41.220752 28.48114,-41.220752 h 10.04702 9.49159 l -0.55547,0.97007 -30.94941,44.324892 -30.949421,44.32488 -9.087631,12.98798 -9.15062,12.98424 z"
            id="path105-5"
            inkscape:label="good y"
