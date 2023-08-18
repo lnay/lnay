@@ -47,7 +47,7 @@
 
 	.nav-masthead .nav-link:hover,
 	.nav-masthead .nav-link:focus {
-		border-bottom-color: rgba(var(--foreground-color), .25);
+		border-bottom-color: rgba(var(--foreground-accent-color), .25);
 	}
 
 	.nav-masthead .nav-link + .nav-link {
@@ -56,6 +56,6 @@
 
 	.nav-masthead .active {
 		color: var(--foreground-color);
-		border-bottom-color: var(--foreground-color);
+		border-bottom-color: var(--foreground-accent-color-opaque);
 	}
 </style>

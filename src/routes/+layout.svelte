@@ -41,6 +41,8 @@
 		--background-color-opaque: rgba(var(--background-color), 1);
 		color: var(--foreground-color-opaque);
 		background-color: var(--background-color-opaque);
+		--foreground-accent-color: 0,50,155;
+		--foreground-accent-color-opaque: rgba(var(--foreground-accent-color), 1);
 	}
 	div.inner {
 		@extend .d-flex;
@@ -70,6 +72,7 @@
 		div.outer {
 			--foreground-color: var(--bs-white-rgb);
 			--background-color: var(--bs-dark-rgb);
+			--foreground-accent-color: 120,200,255;
 		}
 	}
 

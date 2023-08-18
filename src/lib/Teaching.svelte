@@ -42,7 +42,7 @@ where I have received an
         width: 100%;
     }
     td {
-        border: 1px solid rgba(var(--foreground-color),0.3);
+        border: 1px solid rgba(var(--foreground-accent-color),0.3);
         padding: 0.3em;
         text-align: left;
         vertical-align: top;
