@@ -43,6 +43,7 @@
 		background-color: var(--background-color-opaque);
 		--foreground-accent-color: 0,50,155;
 		--foreground-accent-color-opaque: rgba(var(--foreground-accent-color), 1);
+		--bs-code-color: #e1e;
 	}
 	div.inner {
 		@extend .d-flex;
@@ -58,7 +59,6 @@
 	}
 	main {
 		@extend .px-3;
-		--bs-code-color: #f7f;
 	}
 	footer {
 		@extend .mt-auto;
@@ -73,6 +73,7 @@
 			--foreground-color: var(--bs-white-rgb);
 			--background-color: var(--bs-dark-rgb);
 			--foreground-accent-color: 120,200,255;
+			--bs-code-color: #f7f;
 		}
 	}
 
