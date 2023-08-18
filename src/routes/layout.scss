@@ -18,7 +18,7 @@ main {
 	h2{
 		border-bottom: 1px dashed rgba(var(--foreground-accent-color), 0.7);
 	}
-	p {
+	& > p {
 		text-align: justify;
 		justify-content: space-between;
 	}
