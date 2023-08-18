@@ -15,6 +15,7 @@
 <div class="outer">
 	<div class="{containerClass} inner">
 		<header>
+			<img src="/favicon.svg" style="height:1em" alt="logo"/>
 			Luke Naylor
 			<!--<Logo extraClass="flat"/>-->
 			<Nav/>
