@@ -40,7 +40,7 @@
 	.nav-masthead .nav-link {
 		padding: .25rem 0;
 		font-weight: 700;
-		color: rgba(var(--foreground-color), .5);
+		color: rgba(var(--foreground-color), .7);
 		background-color: transparent;
 		border-bottom: .25rem solid transparent;
 	}
