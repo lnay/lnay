@@ -34,8 +34,7 @@
 			"title":"From Fourier to Fourier-Mukai",
 			"abstract":"When you look at the definition for the Fourier-Mukai Transform, it's hard to see what this has to do with integral transforms, let alone the one in its name. Yet, this analogy was obvious to Shigeru Mukai, who first introduced it in the 80s as \"a Fourier functor\". During this talk I will present the Fourier Transform, and the Fourier-Mukai transform, concentrating on the similarities and how they are used for the same purpose. Then, finally, a peek at what role this plays in finding walls for Bridgeland stability conditions.",
 			"type":"blackboard"
-		},
-		{}
+		}
 	],
 	"reading_group_talks":[
 		{

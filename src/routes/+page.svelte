@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Teaching from "$lib/Teaching.svelte";
-    import { marked } from 'marked';
+	import Talks from "$lib/Talks.svelte";
+  import { marked } from 'marked';
 </script>
 <svelte:head>
   <meta name="description" content="Home page of Luke Naylor's personal site" />
@@ -22,4 +23,5 @@ At the moment, I'm interested on automating methods for finding walls, find out 
 about this on the [Pseudowalls page](pseudowalls).
 `)}
 
+<Talks/>
 <Teaching/>
