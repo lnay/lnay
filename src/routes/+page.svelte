@@ -17,8 +17,8 @@ In the past I was a software engineer on the compiler team at
 [Micro Focus](https://www.opentext.com/microfocus).
 
 I study walls on Bridgeland stability conditions for complexes of coherent
-sheaves on Picard Rank 1 surfaces and threefolds
-(an area of Algebraic Geometry).
+sheaves on Picard Rank 1 surfaces and threefolds.
+This is an area of Algebraic Geometry.
 At the moment, I'm interested on automating methods for finding walls, find out more
 about this on the [Pseudowalls page](pseudowalls).
 You can find my [academic CV here](https://gitlab.com/carracall/cv/-/jobs/artifacts/main/raw/CV.pdf?job=build)
