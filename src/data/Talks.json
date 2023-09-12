@@ -2,6 +2,18 @@
 	"talks":[
 		{
 			"event":{
+				"name":"GEARS/ARTIN",
+				"location":"Glasgow University",
+				"date":"2023-09-12",
+				"url":"https://sites.google.com/view/gears-seminar/home"
+			},
+			"title":"From stability of vector bundles to stability in triangulated categories",
+			"abstract":"",
+			"type":"slides",
+			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/geometry-to-algebra-artingears-talk/-/jobs/artifacts/main/raw/main.pdf?job=build"
+		},
+		{
+			"event":{
 				"name":"Hodge Club",
 				"location":"Edinburgh University",
 				"date":"2022-04-22",
