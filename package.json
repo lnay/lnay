@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"marked": "^7.0.2"
+		"marked": "^7.0.2",
+		"vite-imagetools": "^5.0.8"
 	}
 }

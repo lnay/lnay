@@ -1,15 +1,19 @@
 <script lang="ts">
   import Teaching from "$lib/Teaching.svelte";
   import Talks from "$lib/Talks.svelte";
-  import { marked } from 'marked';
-  import profile_pic from "$lib/assets/infront_poster.jpg"
+  import Picture from "$lib/Picture.svelte";
+	import type { ImgMeta } from '$lib/types';
+  import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
+  import image from "$lib/assets/infront_poster.jpg";
 </script>
 <svelte:head>
   <meta name="description" content="Home page of Luke Naylor's personal site" />
 </svelte:head>
 
 <h1>About Me</h1>
-<img alt="The project logo" src={profile_pic} style="float: right; width: 30%; margin-left: 1.5em;"/>
+<p>{JSON.stringify(profile_pic)}</p>
+<Picture meta={profile_pic} width="30%" style="float: right; margin-left: 1.5em; display: inline-block;"/>
+<!--<img src={image} style="float: right; width: 30%; margin-left: 1.5em;"/>-->
 
 <p>
 I am a PhD student in the
