@@ -14,10 +14,11 @@
     <tr>
         <td>
             <details>
-                <summary>{talk.title}</summary>
+                <summary>{talk.title}
                 {#if talk.artifacts}
-                <p><a href={talk.artifacts} target="_blank">Link to slides</a></p>
+                <a href={talk.artifacts} target="_blank">(slides)</a>
                 {/if}
+                </summary>
                 <p class="abstract">
                     <span class="label">Abstract: </span>
                     {talk.abstract}
@@ -45,10 +46,11 @@
     <tr>
         <td>
             <details>
-                <summary>{poster.title}</summary>
+                <summary>{poster.title}
                 {#if poster.artifacts}
-                <p><a href={poster.artifacts} target="_blank">Link to poster</a></p>
+                <a href={poster.artifacts} target="_blank">(poster)</a>
                 {/if}
+                </summary>
                 <p class="abstract">
                     <span class="label">Abstract: </span>
                     {poster.abstract}
