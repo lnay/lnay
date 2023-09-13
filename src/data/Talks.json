@@ -8,7 +8,7 @@
 				"url":"https://sites.google.com/view/gears-seminar/home"
 			},
 			"title":"From stability of vector bundles to stability in triangulated categories",
-			"abstract":"",
+			"abstract":"Classically, stability of vector bundles was studied. But more recently, this area has taken a homological algebra twist with Bridgeland stabilities becoming very popular. Here I will talk about this transition to triangulated categories, with an attempt to make the similarities with Mumford stability as clear as possible.",
 			"type":"slides",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/geometry-to-algebra-artingears-talk/-/jobs/artifacts/main/raw/main.pdf?job=build"
 		},
