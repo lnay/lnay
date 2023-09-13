@@ -1,6 +1,17 @@
 {
 	"courses" : [
 		{
+			"name":"Symmetry and Geometry",
+			"level":"undergraduate (yr 4)",
+			"description":"Course about symmetry groups and tilings using Conway’s approach with orbifolds instead of going deep into group theory",
+			"tutoring": [
+				{
+					"Academic_year" : "2021-22",
+					"block": 1
+				}
+			]
+		},
+		{
 			"name":"Maths Base",
 			"level":"undergraduate (yr 2)",
 			"description":"Drop in session for students to ask for help in any of their courses",
