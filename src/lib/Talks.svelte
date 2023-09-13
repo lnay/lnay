@@ -10,7 +10,9 @@
     <th>Talk</th>
     <th>Event</th>
 </tr>
-{#each talks as talk}
+{#each talks.sort( (a, b) => {
+    return (a.event.date > b.event.date)?-1:1;
+}) as talk}
     <tr>
         <td>
             <details>
