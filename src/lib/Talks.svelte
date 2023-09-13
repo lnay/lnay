@@ -10,9 +10,8 @@
     <th>Talk</th>
     <th>Event</th>
 </tr>
-{#each talks.sort( (a, b) => {
-    return (a.event.date > b.event.date)?-1:1;
-}) as talk}
+{#each talks.sort( (a, b) => (a.event.date > b.event.date)?-1:1)
+as talk}
     <tr>
         <td>
             <details>
@@ -44,9 +43,8 @@
     <th>Poster</th>
     <th>Event</th>
 </tr>
-{#each posters.sort( (a, b) => {
-    return (a.event.date.from > b.event.date.from)?-1:1;
-}) as poster}
+{#each posters.sort( (a, b) => (a.event.date.from > b.event.date.from)?-1:1)
+as poster}
     <tr>
         <td>
             <details>
@@ -80,9 +78,8 @@
     <th>Reading Group Talk</th>
     <th>Reading Group</th>
 </tr>
-{#each reading_group_talks.sort( (a, b) => {
-    return (a.date > b.date)?-1:1;
-}) as rg_talk}
+{#each reading_group_talks.sort( (a, b) => (a.date > b.date)?-1:1)
+as rg_talk}
     <tr>
         <td>
         {rg_talk.topic}
