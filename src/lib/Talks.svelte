@@ -44,7 +44,9 @@
     <th>Poster</th>
     <th>Event</th>
 </tr>
-{#each posters as poster}
+{#each posters.sort( (a, b) => {
+    return (a.event.date.from > b.event.date.from)?-1:1;
+}) as poster}
     <tr>
         <td>
             <details>
