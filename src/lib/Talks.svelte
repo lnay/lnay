@@ -78,7 +78,9 @@
     <th>Reading Group Talk</th>
     <th>Reading Group</th>
 </tr>
-{#each reading_group_talks as rg_talk}
+{#each reading_group_talks.sort( (a, b) => {
+    return (a.date > b.date)?-1:1;
+}) as rg_talk}
     <tr>
         <td>
         {rg_talk.topic}
