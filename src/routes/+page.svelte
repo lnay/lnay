@@ -11,7 +11,7 @@
 <h1>About Me</h1>
 <Picture meta={profile_pic}
   alt="Luke Naylor presenting poster at Imperial College London"
-  style="width: 30%; float: right; margin-bottom: 1.5em; margin-left: 1.5em; display: inline-block;"
+  style="width: 30%; float: right; margin-bottom: 1em; margin-left: 1.5em; display: inline-block;"
   />
 
 <p>
