@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { ImageMetadata } from '$lib/types';
 
-    export let meta: ImageMetadata[];
-	export let width = '100vw';
+	export let meta: ImageMetadata[];
+	export let width = '100%';
 	export let style: string = '';
 	export let alt = '';
 	export let loading: 'lazy' | 'eager' | null | undefined = 'lazy';

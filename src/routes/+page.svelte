@@ -2,18 +2,17 @@
   import Teaching from "$lib/Teaching.svelte";
   import Talks from "$lib/Talks.svelte";
   import Picture from "$lib/Picture.svelte";
-	import type { ImgMeta } from '$lib/types';
   import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
-  import image from "$lib/assets/infront_poster.jpg";
 </script>
 <svelte:head>
   <meta name="description" content="Home page of Luke Naylor's personal site" />
 </svelte:head>
 
 <h1>About Me</h1>
-<p>{JSON.stringify(profile_pic)}</p>
-<Picture meta={profile_pic} width="30%" style="float: right; margin-left: 1.5em; display: inline-block;"/>
-<!--<img src={image} style="float: right; width: 30%; margin-left: 1.5em;"/>-->
+<Picture meta={profile_pic}
+  alt="Luke Naylor presenting poster at Imperial College London"
+  style="width: 30%; float: right; margin-bottom: 1.5em; margin-left: 1.5em; display: inline-block;"
+  />
 
 <p>
 I am a PhD student in the
