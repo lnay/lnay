@@ -1,9 +1,10 @@
+<script lang="ts">
+import { marked } from 'marked';
+const WEBAPP_URL = "https://pseudowalls.gitlab.io/webapp/tilt.leptos/";
+</script>
 <svelte:head>
   <meta name="description" content="Section of Luke Naylor's personal site about using programming libraries for computing possibilities for walls of tilt Bridgeland stabilities on Picard rank 1 surfaces." />
 </svelte:head>
-<script lang="ts">
-    import { marked } from 'marked';
-</script>
 
 {@html marked(`
 # Wall Finding
@@ -27,11 +28,11 @@ There's a couple of ways to use these computations outside the webapp:
   - Precompiled binaries with instructions
 - There's also a [python wrapper](https://github.com/lnay/pseudo_tilt_py) (usable from SageMath too) which can be installed with
 \`pip install pseudo_bridgeland_tilt\`
-
-## Webapp [[fullscreen]](https://pseudowalls.gitlab.io/webapp/tilt.sycamore/index.html)
 `)}
 
-<iframe src="https://pseudowalls.gitlab.io/webapp/tilt.sycamore/index.html" title="description"></iframe> 
+<h2>WebApp <a href={WEBAPP_URL}>[fullscreen]</a></h2>
+
+<iframe src={WEBAPP_URL} title="description"></iframe> 
 
 <style lang="scss">
     iframe {
