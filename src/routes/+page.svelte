@@ -29,7 +29,7 @@ In the past I was a software engineer on the compiler team at
 I study walls on Bridgeland stability conditions for complexes of coherent
 sheaves on Picard Rank 1 surfaces and threefolds.
 This is an area of Algebraic Geometry.
-At the moment, I'm interested on automating methods for finding walls, find out more
+At the moment, I'm interested in automating methods for finding walls, find out more
 about this on the
 <a href="pseudowalls">Pseudowalls page</a>.
 </p>
