@@ -2,6 +2,7 @@
   import Teaching from "$lib/Teaching.svelte";
   import Talks from "$lib/Talks.svelte";
   import Picture from "$lib/Picture.svelte";
+  import Socials from "$lib/Socials.svelte";
   import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
 </script>
 <svelte:head>
@@ -9,10 +10,12 @@
 </svelte:head>
 
 <h1>About Me</h1>
-<Picture meta={profile_pic}
-  alt="Luke Naylor presenting poster at Imperial College London"
-  style="width: 30%; float: right; margin-bottom: 1em; margin-left: 1.5em; display: inline-block;"
-  />
+<div class="pic-frame">
+  <Picture meta={profile_pic}
+    alt="Luke Naylor presenting poster at Imperial College London"
+    />
+  <Socials/>
+</div>
 
 <p>
 I am a PhD student in the
@@ -43,3 +46,13 @@ about this on the
 
 <Talks/>
 <Teaching/>
+
+<style lang="scss">
+.pic-frame {
+  width: 30%;
+  float: right;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  font-size: 70%; //0.7em;
+}
+</style>
