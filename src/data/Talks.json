@@ -10,7 +10,7 @@
 			"title":"Narrowing Down Possibilities for Tilt Walls",
 			"abstract":"Bridgeland stability conditions were introduced on arbitrary triangulated categories (such as D^b(X)) as an analogue to classical notions of stability for vector bundles. In certain settings, for a fixed Chern character, there are \"chambers\" of stability conditions, separated by \"walls\", which yield the same moduli of stable objects. One of these chambers corresponding to Gieseker stability of sheaves. Here I present a tool I have been developing to narrow down the possibilities for such walls on Picard rank 1 surfaces in a case when we know there are finitely many. As well as potential extensions to give a generating sequence when there are infinitely many walls on a principally polarized abelian surface.",
 			"type":"slides",
-			"artifact":""
+			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/structure-and-symmetry-day/-/raw/main/Narrowing-down-walls.pdf?inline=false"
 		},
 		{
 			"event":{
