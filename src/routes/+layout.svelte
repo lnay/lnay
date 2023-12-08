@@ -37,7 +37,7 @@
 		@extend .h-100;
 		min-height: 100vh;
 		--foreground-color: var(--bs-black-rgb);
-		--background-color: var(--bs-white-rgb);
+		--background-color: 240,240,240;
 		--foreground-color-opaque: rgba(var(--foreground-color), 1);
 		--background-color-opaque: rgba(var(--background-color), 1);
 		color: var(--foreground-color-opaque);
@@ -61,6 +61,10 @@
 	main {
 		@extend .px-3;
 	}
+	:global(body) {
+		background-color: var(--background-color-opaque);
+	}
+
 	footer {
 		@extend .mt-auto;
 		//@extend .text-white-50;
