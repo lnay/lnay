@@ -57,5 +57,6 @@ about this on the
   border: 2px solid rgba(var(--foreground-accent-color), 0.2);
   background-color: rgba(var(--foreground-accent-color), 0.03);
   padding: 2px;
+  overflow: hidden;
 }
 </style>
