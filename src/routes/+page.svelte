@@ -16,13 +16,20 @@
 
 <p>
 I am a PhD student in the
-<a href="https://www.maths.ed.ac.uk/">School of Mathematics</a>
+<a target="_blank" href="https://www.maths.ed.ac.uk/">School of Mathematics</a>
 at the
-<a href="https://www.ed.ac.uk/">University of Edinburgh</a>,
+<a target="_blank" href="https://www.ed.ac.uk/">University of Edinburgh</a>,
 supervised by
-<a href="https://www.ed.ac.uk/profile/antony-maciocia">Prof. Antony Maciocia</a>
-In the past I was a software engineer on the compiler team at
-<a href="https://www.opentext.com/microfocus">Micro Focus</a>.
+<a target="_blank" href="https://www.ed.ac.uk/profile/antony-maciocia">Prof. Antony Maciocia</a>.
+In the past I was a software engineer on the compiler team at (formally)
+<a target="_blank" href="https://www.opentext.com/microfocus">Micro Focus</a>
+(now the
+<abbr title="Application Modernisation and Connectivity (moving COBOL applications off mainframes)">
+AMC
+</abbr> division of
+<del><a target="_black" href="https://www.opentext.com/">OpenText</a></del>
+<a target="_black" href="https://www.rocketsoftware.com/" >Rocket Software</a>
+).
 </p>
 
 <p>
