@@ -87,7 +87,7 @@ for(let i = 0; i < entries.length; i += 2)
     }
     .icon {
       display: inline-block;
-      width: 1.5em;
+      width: 1.2em;
       height: 2em;
       vertical-align: middle;
     }
