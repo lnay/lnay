@@ -58,5 +58,8 @@ about this on the
   background-color: rgba(var(--foreground-accent-color), 0.03);
   padding: 2px;
   overflow: hidden;
+  @media (max-width: 350px) {
+    display: none;
+  }
 }
 </style>
