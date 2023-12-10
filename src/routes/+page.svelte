@@ -49,7 +49,7 @@ about this on the
 
 <style lang="scss">
 .pic-frame {
-  width: 30%;
+  width: 34%;
   float: right;
   margin-bottom: 1em;
   margin-left: 1.5em;
