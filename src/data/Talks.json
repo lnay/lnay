@@ -2,7 +2,7 @@
 	"talks":[
 		{
 			"event":{
-				"name":"Structure and Symmetry Day",
+				"name":"Structure and <br> Symmetry Day",
 				"location":"Edinburgh University",
 				"date":"2023-12-06",
 				"url":"https://www.maths.ed.ac.uk/school-of-mathematics/research/structure-symmetry"
@@ -62,22 +62,22 @@
 	],
 	"reading_group_talks":[
 		{
-			"group": "Commutative Algebra (Eisenbud)",
+			"group": "Commutative Algebra<br> (Eisenbud)",
 			"date": "2022-11-04",
 			"topic": "Example workthrough: primary decomposition"
 		},
 		{
-			"group": "Commutative Algebra (Eisenbud)",
+			"group": "Commutative Algebra<br> (Eisenbud)",
 			"date": "2022-12-10",
 			"topic": "Flat families"
 		},
 		{
-			"group": "Commutative Algebra (Eisenbud)",
+			"group": "Commutative Algebra<br> (Eisenbud)",
 			"date": "2023-03-03",
 			"topic": "Constructive proof of syzygy theorem (application of Groebner bases)"
 		},
 		{
-			"group": "Algebraic Geometry (Rising Sea)",
+			"group": "Algebraic Geometry<br> (Rising Sea)",
 			"date": "2023-05-05",
 			"topic": "Closed embeddings"
 		}
@@ -85,7 +85,7 @@
 	"posters":[
 		{
 			"event":{
-				"name":"Conference: Derived Categories, Moduli Spaces, and Counting Invariants",
+				"name":"Conference:<br> Derived Categories,<br> Moduli Spaces, and<br> Counting Invariants",
 				"location":"Imperial College London",
 				"date":{
 					"from":"2023-07-03",

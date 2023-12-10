@@ -49,7 +49,7 @@ where I have received an
         overflow-y: clip;
         &:nth-child(2) {
             font-size: 0.8em;
-            width: 12.5em;
+            width: max-content;
             text-align: right;
             padding-bottom: 0;
             position: relative;
@@ -80,7 +80,10 @@ where I have received an
             }
         }
         ul {
+            display: inline-block;
             margin-bottom: 0;
+            width: max-content;
+            padding-left: 0;
             li {
                 list-style-type: none;
                 font-style: italic;

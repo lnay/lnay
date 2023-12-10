@@ -27,9 +27,8 @@ as talk}
             </details>
         </td>
         <td>
-            <a href={talk.event.url} target="_blank" class="event">
-                {talk.event.name}
-            </a>,
+            <a href={talk.event.url} target="_blank" class="event"
+              >{@html talk.event.name}</a>,
             <br>
             <span class="location">{talk.event.location}</span>
             <br>
@@ -60,9 +59,8 @@ as poster}
             </details>
         </td>
         <td>
-            <a href={poster.event.url} target="_blank" class="event">
-                {poster.event.name}
-            </a>,
+            <a href={poster.event.url} target="_blank" class="event"
+              >{@html poster.event.name}</a>,
             <br>
             <span class="location">{poster.event.location}</span>
             <br>
@@ -85,7 +83,7 @@ as rg_talk}
         {rg_talk.topic}
         </td>
         <td>
-            <span class="event">{rg_talk.group}</span>,
+            <span class="event">{@html rg_talk.group}</span>,
             <br>
             <span class="date">{rg_talk.date}</span>
         </td>
@@ -116,7 +114,6 @@ as rg_talk}
         overflow-y: clip;
         &:nth-child(2) {
             font-size: 0.8em;
-            width: 15em;
             .event {
                 font-weight: bold;
             }
