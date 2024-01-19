@@ -1,6 +1,4 @@
 <script lang="ts">
-  import Teaching from "$lib/Teaching.svelte";
-  import Talks from "$lib/Talks.svelte";
   import Picture from "$lib/Picture.svelte";
   import Socials from "$lib/Socials.svelte";
   import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
@@ -51,9 +49,6 @@ Make sure to fill out the forms in the
 <a href="https://glams-professional-skills.github.io/website/announcements/launch/">launch announcement</a>
 if wanting to take part.
 </p>
-
-<Talks/>
-<Teaching/>
 
 <style lang="scss">
 .pic-frame {

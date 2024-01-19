@@ -10,6 +10,10 @@
 			name: "Home"
 		},
 		{
+			route: "/experience",
+			name: "Experience"
+		},
+		{
 			route: "/pseudowalls",
 			name: "Pseudowalls"
 		},

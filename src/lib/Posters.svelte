@@ -1,47 +1,43 @@
 <script lang="ts">
-    import {talks} from "$data/Talks.json";
+    import {talks, reading_group_talks, posters} from "$data/Talks.json";
 </script>
 
 <tbody>
 <tr>
-    <th>Talk</th>
+    <th>Poster</th>
     <th>Event</th>
 </tr>
-{#each talks.sort( (a, b) => (a.event.date > b.event.date)?-1:1)
-as talk}
+{#each posters.sort( (a, b) => (a.event.date.from > b.event.date.from)?-1:1)
+as poster}
     <tr>
         <td>
             <details>
-                <summary>{talk.title}
-                {#if talk.artifacts}
-                <a href={talk.artifacts} target="_blank">(slides)</a>
+                <summary>{poster.title}
+                {#if poster.artifacts}
+                <a href={poster.artifacts} target="_blank">(poster)</a>
                 {/if}
                 </summary>
                 <p class="abstract">
                     <span class="label">Abstract: </span>
-                    {talk.abstract}
+                    {poster.abstract}
                 </p>
             </details>
         </td>
         <td>
-            <a href={talk.event.url} target="_blank" class="event"
-              >{@html talk.event.name}</a>,
+            <a href={poster.event.url} target="_blank" class="event"
+              >{@html poster.event.name}</a>,
             <br>
-            <span class="location">{talk.event.location}</span>
+            <span class="location">{poster.event.location}</span>
             <br>
-            <span class="date">{talk.event.date}</span>
+            <span class="date">{poster.event.date.from}</span>
+            to
+            <span class="date">{poster.event.date.to}</span>
         </td>
     </tr>
 {/each}
 </tbody>
 
 <style lang="scss">
-    table {
-        border-collapse: collapse;
-        text-decoration: none;
-        font-style: normal;
-        width: 100%;
-    }
     th {
         border-bottom: 2px solid rgba(var(--foreground-accent-color),0.3);
         padding-bottom: 1em;
@@ -56,6 +52,7 @@ as talk}
         vertical-align: top;
         overflow-y: clip;
         &:nth-child(2) {
+            width: 14em;
             font-size: 0.8em;
             .event {
                 font-weight: bold;

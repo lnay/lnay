@@ -1,6 +1,5 @@
 <script lang="ts">
 	import "./layout.scss";
-	import Logo from "$lib/Logo.svelte";
 	import Nav from "$lib/navbar.svelte";
 
 	import { page } from '$app/stores';
@@ -17,7 +16,6 @@
 		<header>
 			<img src="/favicon.svg" style="height:1em" alt="logo"/>
 			Luke Naylor
-			<!--<Logo extraClass="flat"/>-->
 			<Nav/>
 		</header>
 

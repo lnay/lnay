@@ -1,35 +1,22 @@
 <script lang="ts">
-    import {talks} from "$data/Talks.json";
+    import {reading_group_talks} from "$data/Talks.json";
 </script>
 
 <tbody>
 <tr>
-    <th>Talk</th>
-    <th>Event</th>
+    <th>Reading Group Talk</th>
+    <th>Reading Group</th>
 </tr>
-{#each talks.sort( (a, b) => (a.event.date > b.event.date)?-1:1)
-as talk}
+{#each reading_group_talks.sort( (a, b) => (a.date > b.date)?-1:1)
+as rg_talk}
     <tr>
         <td>
-            <details>
-                <summary>{talk.title}
-                {#if talk.artifacts}
-                <a href={talk.artifacts} target="_blank">(slides)</a>
-                {/if}
-                </summary>
-                <p class="abstract">
-                    <span class="label">Abstract: </span>
-                    {talk.abstract}
-                </p>
-            </details>
+        {rg_talk.topic}
         </td>
         <td>
-            <a href={talk.event.url} target="_blank" class="event"
-              >{@html talk.event.name}</a>,
+            <span class="event">{@html rg_talk.group}</span>,
             <br>
-            <span class="location">{talk.event.location}</span>
-            <br>
-            <span class="date">{talk.event.date}</span>
+            <span class="date">{rg_talk.date}</span>
         </td>
     </tr>
 {/each}
