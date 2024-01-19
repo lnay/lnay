@@ -24,14 +24,16 @@ as poster}
             </details>
         </td>
         <td>
-            <a href={poster.event.url} target="_blank" class="event"
-              >{@html poster.event.name}</a>,
+            {#each poster.event as event}
+            <a href={event.url} target="_blank" class="event"
+              >{@html event.name}</a>,
             <br>
-            <span class="location">{poster.event.location}</span>
+            <span class="location">{event.location}</span>
             <br>
-            <span class="date">{poster.event.date.from}</span>
+            <span class="date">{event.date.from}</span>
             to
-            <span class="date">{poster.event.date.to}</span>
+            <span class="date">{event.date.to}</span>
+            {/each}
         </td>
     </tr>
 {/each}

@@ -1,60 +1,80 @@
 {
 	"talks":[
 		{
-			"event":{
+			"event":[{
+				"name":"<abbr title='derived obsessed graduate seminar'>DOGS</abbr> seminar",
+				"location":"UCL (online)",
+				"date":"2024-01-16",
+				"url":""
+			}],
+			"title":"Fourier-Mukai Transforms",
+			"abstract":"Shigeru Mukai first introduced a \"Fourier functor\" in the 80s, now known as the Fourier-Mukai transform, which has since been used extensively for derived equivalences in algebraic geometry. In this talk, I will cover some material around the following topics: Where does the \"Fourier\" come from? Some homological algebra around the definition and early propositions, and some roles it plays in algebraic geometry.",
+			"type":"slides",
+			"artifacts":"https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fuoe-my.sharepoint.com%2F%3Ao%3A%2Fg%2Fpersonal%2Fs1511002_ed_ac_uk%2FEhVRcACFsOJGlB1klZsfnz4BxeE0d-tGYcdjavtTi0iwug%3Fe%3DR8rAHl&data=05%7C02%7CL.Naylor%40sms.ed.ac.uk%7Cc1aa4da6f84d490c225c08dc16b1261b%7C2e9f06b016694589878910a06934dc61%7C1%7C0%7C638410197304715747%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=nFYlFV5CdS5360OKuExNJ8sQYAN5BQlIKGLB8uNhK4I%3D&reserved=0"
+		},
+		{
+			"event":[{
 				"name":"Structure and <br> Symmetry Day",
 				"location":"Edinburgh University",
 				"date":"2023-12-06",
 				"url":"https://www.maths.ed.ac.uk/school-of-mathematics/research/structure-symmetry"
-			},
+			}],
 			"title":"Narrowing Down Possibilities for Tilt Walls",
 			"abstract":"Bridgeland stability conditions were introduced on arbitrary triangulated categories (such as D^b(X)) as an analogue to classical notions of stability for vector bundles. In certain settings, for a fixed Chern character, there are \"chambers\" of stability conditions, separated by \"walls\", which yield the same moduli of stable objects. One of these chambers corresponding to Gieseker stability of sheaves. Here I present a tool I have been developing to narrow down the possibilities for such walls on Picard rank 1 surfaces in a case when we know there are finitely many. As well as potential extensions to give a generating sequence when there are infinitely many walls on a principally polarized abelian surface.",
 			"type":"slides",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/structure-and-symmetry-day/-/raw/main/Narrowing-down-walls.pdf?inline=false"
 		},
 		{
-			"event":{
+			"event":[{
 				"name":"GEARS/ARTIN",
 				"location":"Glasgow University",
 				"date":"2023-09-12",
 				"url":"https://sites.google.com/view/gears-seminar/home"
-			},
+			}],
 			"title":"From stability of vector bundles to stability in triangulated categories",
 			"abstract":"Classically, stability of vector bundles was studied. But more recently, this area has taken a homological algebra twist with Bridgeland stabilities becoming very popular. Here I will talk about this transition to triangulated categories, with an attempt to make the similarities with Mumford stability as clear as possible.",
 			"type":"slides",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/geometry-to-algebra-artingears-talk/-/jobs/artifacts/main/raw/main.pdf?job=build"
 		},
 		{
-			"event":{
-				"name":"Hodge Club",
-				"location":"Edinburgh University",
-				"date":"2022-04-22",
-				"url":"https://hodge.maths.ed.ac.uk/tiki/Hodge+Club+-+Archived#Semester_2"
-			},
+			"event": [
+				{
+					"name":"Hodge Club",
+					"location":"Edinburgh University",
+					"date":"2023-11-10",
+					"url":"https://hodge.maths.ed.ac.uk/tiki/Hodge+Club+-+Archived#Semester_2"
+				},
+				{
+					"name":"Hodge Club",
+					"location":"Edinburgh University",
+					"date":"2022-04-22",
+					"url":"https://hodge.maths.ed.ac.uk/tiki/Hodge+Club+-+Archived#Semester_2"
+				}
+			],
 			"title":"Conway's approach to symmetries",
 			"abstract":"When I first saw the classification of wallpaper groups, as I'm sure it was the same with many others, it was a very algebraic approach. For example considering the translation subgroup, the point group, and ways they can fit together. This past semester I had the opportunity to tutor for Toby Bailey's course \"Symmetry and Geometry\", which is based on material from a book co-authored by one of his past lecturers John Conway titled \"The Symmetries of things\". The approach in this text is, instead of considering the groups themselves, to consider the space (which has the symmetries) quotiented by the group of symmetries giving so called orbifolds. This method generalises well to spherical and hyperbolic symmetry and gives clean picturesque ways of classifying certain types of tilings. This talk is a 50 minute picturesque summary and advert for the topics in this area.",
 			"type":"slides",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/symmetries-hodge-club"
 		},
 		{
-			"event":{
+			"event":[{
 				"name":"Hodge Club",
 				"location":"Edinburgh University",
 				"date":"2023-03-24",
 				"url":"https://hodge.maths.ed.ac.uk/tiki/Hodge+Club"
-			},
+			}],
 			"title":"Bridgeland Stabilities and Finding Walls",
 			"abstract":"As many are aware, quite a few of us in the school are concerned with the business of stability conditions on sheaves. If you’ve talked to these people before, you very quickly realise that this is actually short for “stability conditions on the derived category of coherent sheaves”. In this talk I introduce this topic, particularly, the explicit stability conditions constructed by Bridgeland for K3 surfaces. But also how they relate to the more classical Mumford and Gieseker stabilities (which do not involve the derived). Later on, some stabilities on threefolds too. Along the way we will have a look at the notion of walls and why we want to find them. This will also expose the benefit of a couple of different viewpoints to find restrictions on the set of possible walls, some numeric, but also the geometry of some characteristic curves on the space of stability conditions.",
 			"type":"slides",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/presentations/stabilities-hodge-club"
 		},
 		{
-			"event":{
+			"event":[{
 				"name":"GEARS",
 				"location":"Glasgow University",
 				"date":"2022-10-25",
 				"url":"https://sites.google.com/view/gears-seminar/2022-23"
-			},
+			}],
 			"title":"From Fourier to Fourier-Mukai",
 			"abstract":"When you look at the definition for the Fourier-Mukai Transform, it's hard to see what this has to do with integral transforms, let alone the one in its name. Yet, this analogy was obvious to Shigeru Mukai, who first introduced it in the 80s as \"a Fourier functor\". During this talk I will present the Fourier Transform, and the Fourier-Mukai transform, concentrating on the similarities and how they are used for the same purpose. Then, finally, a peek at what role this plays in finding walls for Bridgeland stability conditions.",
 			"type":"blackboard"
@@ -84,15 +104,15 @@
 	],
 	"posters":[
 		{
-			"event":{
-				"name":"Conference:<br> Derived Categories,<br> Moduli Spaces, and<br> Counting Invariants",
+			"event":[{
+				"name":"Conference: <abbr title='Derived Categories, Moduli Spaces, and Counting Invariants'>DCMSCI</abbr>",
 				"location":"Imperial College London",
 				"date":{
 					"from":"2023-07-03",
 					"to":"2023-07-07"
 				},
 				"url":"https://sites.google.com/view/derivedfrg/events/imperial-2023?authuser=0"
-			},
+			}],
 			"title":"Tighter bounds on ranks of tilt semistabilizers – narrowing down on possibilities quicker",
 			"abstract":"When trying to narrow down the possibilities for the locations of tilt walls, the typical strategy is to find potential semistabilizers who’s Chern characters satisfy a set of inequalities which would be satisfied by genuine ones (including Bogomolov-Gieseker). In 2020, Benjamin Schmidt published a program to compute the possibilities, however the running time suffered from a conservative estimate for a bound on the ranks of tilt semistabilizers. The work I want to present is a set of refinements on this bound, one in the form of a pragmatic formula to calculate by hand which can be as small as a quarter of the original bound. As well as more complicated formulae with extra parameters which are better suited in the context of a newer computer program. This newer program gives instantaneous results in certain examples where the original takes over an hour, and can easily be tried from your browser at https://pseudowalls.gitlab.io/webapp/tilt.sycamore/.",
 			"artifacts":"https://git.ecdf.ed.ac.uk/personal-latex-documents/research/icl-poster-2023/-/jobs/artifacts/master/raw/poster.pdf?job=build"

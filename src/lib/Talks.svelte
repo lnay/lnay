@@ -7,7 +7,7 @@
     <th>Talk</th>
     <th>Event</th>
 </tr>
-{#each talks.sort( (a, b) => (a.event.date > b.event.date)?-1:1)
+{#each talks.sort( (a, b) => (a.event[0].date > b.event[0].date)?-1:1)
 as talk}
     <tr>
         <td>
@@ -24,12 +24,16 @@ as talk}
             </details>
         </td>
         <td>
-            <a href={talk.event.url} target="_blank" class="event"
-              >{@html talk.event.name}</a>,
+            {#each talk.event as event}
+            <div>
+            <a href={event.url} target="_blank" class="event"
+              >{@html event.name}</a>,
             <br>
-            <span class="location">{talk.event.location}</span>
+            <span class="location">{event.location}</span>
             <br>
-            <span class="date">{talk.event.date}</span>
+            <span class="date">{event.date}</span>
+            </div>
+            {/each}
         </td>
     </tr>
 {/each}
@@ -57,6 +61,7 @@ as talk}
         overflow-y: clip;
         &:nth-child(2) {
             font-size: 0.8em;
+            width: 12em;
             .event {
                 font-weight: bold;
             }
