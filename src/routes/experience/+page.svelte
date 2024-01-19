@@ -5,7 +5,6 @@
   import Posters from "$lib/Posters.svelte";
   let table_container_width: number = 800;
   $: split_tables = (table_container_width > 800)? true: false;
-  $: console.log(table_container_width, split_tables);
 </script>
 <svelte:head>
   <meta name="description" content="Luke Naylor's academic related experience" />
@@ -37,15 +36,31 @@
 
 <h1>Teaching</h1>
 
+<h2>Teaching Material Creation</h2>
 <p>
-I am involved with teaching in the School of Mathematics at the University of Edinburgh,
-where I have received an
+I was involved with the logistics for moving to using GitHub Codespaces in the
+<a href="http://www.drps.ed.ac.uk/23-24/dpt/cxmath08065.htm">Computational Numerics</a> course,
+following the release by GitHub in early 2023.
+In particular, the containerization.
+I've also added to the teaching material in that course to encourage students to make use of IDE debuggers.
+</p>
+<p>
+For the beginning of 2024, I am running a
+<a href="https://glams-professional-skills.github.io/website/">workshop</a>
+to promote tech literacy among mathematical researchers.
+</p>
+
+<h2>Tutoring</h2>
+<p>
+I haved been involved with tutoring in the School of Mathematics at the University of Edinburgh,
+where I received an
 <a href="https://www.ed.ac.uk/institute-academic-development/learning-teaching/cpd/teaching-award">
 Associate Fellowship of the Higher Education Academy
 </a>
 </p>
 
 <table border="1" frame="void" rules="all">
+
 <Teaching/>
 </table>
 <style lang="scss">
