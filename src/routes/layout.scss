@@ -1,14 +1,31 @@
 @use "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 main {
+	--hyperlink-color-opaque: color-mix(
+		in srgb,
+		var(--foreground-color-opaque),
+		var(--foreground-accent-color-opaque) 33%
+	);
+	--hyperlink-color-stronger-opaque: color-mix(
+		in srgb,
+		var(--foreground-color-opaque),
+		var(--foreground-accent-color-opaque) 75%
+	);
+
 	a {
-		color: var(--foreground-color-opaque);
+		color: var(--hyperlink-color-opaque);
 		font-weight: bold;
 		text-decoration: none;
+		&:hover{
+			color: var(--hyperlink-color-stronger-opaque);
+			text-decoration: underline dotted 1px;
+		}
+	}
+	p a {
+		text-decoration: underline dotted 1px;
 		font-style: italic;
 		&:hover{
-			color: var(--foreground-color-opaque);
-			text-decoration: underline;
+			text-decoration: underline 1px;
 		}
 	}
 	h1{
