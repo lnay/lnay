@@ -28,6 +28,9 @@ There's a couple of ways to use these computations outside the webapp:
   - Precompiled binaries with instructions
 - There's also a [python wrapper](https://github.com/lnay/pseudo_tilt_py) (usable from SageMath too) which can be installed with
 \`pip install pseudo_bridgeland_tilt\`
+  - This functionality will eventually be included in another, less plain, [python library](https://gitlab.com/pseudowalls/pseudowalls) which currently deals with symbolic maniplations (using sympy or sage) of expressions related to pseudowalls.
+  - The python wrapper currently only attempts to deal with surfaces where the generator of the Neron-Severi group has self intersection 1 or 2 (such as $\mathbb{P}^2$ or principally polarized surface).
+- For other surfaces, the above mentioned Rust crate must be used directly. To try in the cloud, follow the link to this [repository](https://github.com/lnay/tilt-rs-notebook) to open an interactive notebook with GitHub codespaces.
 `)}
 
 <h2>WebApp <a href={WEBAPP_URL}>[fullscreen]</a></h2>
