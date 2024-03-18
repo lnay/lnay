@@ -3,7 +3,6 @@
 	import Nav from "$lib/navbar.svelte";
 
 	import { page } from '$app/stores';
-	$: containerClass = $page.url.pathname==='/'?"cover-container":"container";
 </script>
 
 <!--<meta name="theme-color" content="#7952b3">-->
@@ -12,17 +11,22 @@
 </svelte:head>
 
 <div class="outer">
-	<div class="{containerClass} inner">
+	<div class="first-inner">
 		<header>
 			<img src="/favicon.svg" style="height:1em" alt="logo"/>
 			Luke Naylor
 			<Nav/>
 		</header>
+		<div class="second-inner"
+			class:cover-container={$page.url.pathname==='/'}
+			class:container={$page.url.pathname!=='/'}
+			style="padding-left: 0 !important; padding-right: 0 !important;"
+		>
+			<main>
+				<slot></slot>
+			</main>
 
-		<main>
-			<slot></slot>
-		</main>
-
+		</div>
 		<footer>
 		</footer>
 	</div>
@@ -44,6 +48,17 @@
 		--foreground-accent-color-opaque: rgba(var(--foreground-accent-color), 1);
 		--bs-code-color: #e1e;
 	}
+	div.first-inner{
+		// containing nav main and footer
+		@extend .inner;
+		@extend .container;
+		@extend .suppress-side-padding;
+	}
+	div.second-inner{
+		// containing just main
+		@extend .inner;
+		transition: max-width 0.1s ease-in;
+	}
 	div.inner {
 		@extend .d-flex;
 		@extend .w-100;
@@ -51,14 +66,19 @@
 		@extend .p-3;
 		@extend .mx-auto;
 		@extend .flex-column;
-		transition: max-width 0.1s ease-in;
 	}
 	header {
 		@extend .mb-auto;
 	}
+	.suppress-side-padding {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 	main {
 		@extend .px-3;
+		@extend .suppress-side-padding;
 	}
+
 	:global(body) {
 		background-color: var(--background-color-opaque);
 	}
