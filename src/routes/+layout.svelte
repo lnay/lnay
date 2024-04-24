@@ -1,8 +1,9 @@
 <script lang="ts">
-	import "./layout.scss";
-	import Nav from "$lib/navbar.svelte";
+	import "../app.pcss";
+    import "./layout.scss";
+    import Nav from "$lib/navbar.svelte";
 
-	import { page } from '$app/stores';
+    import { page } from '$app/stores';
 </script>
 
 <!--<meta name="theme-color" content="#7952b3">-->
@@ -13,15 +14,11 @@
 <div class="outer">
 	<div class="first-inner">
 		<header>
-			<img src="/favicon.svg" style="height:1em" alt="logo"/>
+			<img src="/favicon.svg" style="height:1em" alt="logo">
 			Luke Naylor
-			<Nav/>
+			<Nav></Nav>
 		</header>
-		<div class="second-inner"
-			class:cover-container={$page.url.pathname==='/'}
-			class:container={$page.url.pathname!=='/'}
-			style="padding-left: 0 !important; padding-right: 0 !important;"
-		>
+		<div class="second-inner" class:cover-container="{$page.url.pathname==='/'}" class:container="{$page.url.pathname!=='/'}" style="padding-left: 0 !important; padding-right: 0 !important;">
 			<main>
 				<slot></slot>
 			</main>
