@@ -1,23 +1,8 @@
-@use "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 main {
-	--hyperlink-color-opaque: color-mix(
-		in srgb,
-		var(--foreground-color-opaque),
-		var(--foreground-accent-color-opaque) 33%
-	);
-	--hyperlink-color-stronger-opaque: color-mix(
-		in srgb,
-		var(--foreground-color-opaque),
-		var(--foreground-accent-color-opaque) 75%
-	);
-
 	a {
-		color: var(--hyperlink-color-opaque);
 		font-weight: bold;
 		text-decoration: none;
 		&:hover{
-			color: var(--hyperlink-color-stronger-opaque);
 			text-decoration: underline dotted 1px;
 		}
 	}
@@ -30,11 +15,11 @@ main {
 	}
 	h1{
 		text-align: center;
-		border-bottom: 2px solid rgba(var(--foreground-accent-color), 0.7);
+		border-bottom: 2px solid blue;
 		clear: both;
 	}
 	h2{
-		border-bottom: 1px dashed rgba(var(--foreground-accent-color), 0.7);
+		border-bottom: 1px dashed blue, 0.7;
 	}
 	& > p {
 		text-align: justify;
@@ -46,23 +31,4 @@ main {
 	code {
 		font-size: 1.1em !important;
 	}
-}
-
-
-@media (min-width: 768px) {
-	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
-	}
-}
-/*
- * Globals
- */
-
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-	color: #333;
-	text-shadow: none; /* Prevent inheritance from `body` */
 }

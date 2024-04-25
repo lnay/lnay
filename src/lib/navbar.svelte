@@ -41,7 +41,7 @@
 		{
 			route: "/blog",
 			name: "Blog"
-		},
+		}
 		/*{
 			route: "/contact",
 			name: "Contact"
@@ -49,9 +49,9 @@
 	];
 	
 </script>
-<nav class="nav nav-masthead justify-content-center float-md-end">
+<nav>
 	{#each nav_items as { route, name}}
-		<a class="nav-link {pagepath===route?'active':''}"
+		<a class="{pagepath===route?'active':''}"
 		   aria-current="page"
 		   href="{route}">
 			{name}
@@ -67,32 +67,32 @@
 </nav>
 
 <style lang="scss">
-	.nav-masthead .nav-link {
+	nav > a {
+		display: inline-block;
 		padding: .25rem 0;
 		font-weight: 700;
-		color: rgba(var(--foreground-color), .7);
+		color: rgba(0,0,0, .7);
 		background-color: transparent;
 		border-bottom: none;
+
 		div.underline {
 			height: .25rem;
-			background-color: var(--foreground-accent-color-opaque);
+			background-color: blue;
 			width: 100%;
 		}
-	}
-
-	.nav-masthead .nav-link:hover,
-	.nav-masthead .nav-link:focus {
-		&:not(.active) {
-			color: var(--foreground-color);
+		&:hover, &:focus {
+			&:not(.active) {
+				color: black;
+			}
 		}
 	}
 
-	.nav-masthead .nav-link + .nav-link {
+	nav a + a {
 		margin-left: 1rem;
 	}
 
-	.nav-masthead .active {
-		color: var(--foreground-color);
+	nav .active {
+		color: black;
 		border-bottom: none;
 	}
 </style>
