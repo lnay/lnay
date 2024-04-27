@@ -24,13 +24,27 @@
 {/each}
 
 <style lang="scss">
+    table {
+        border-collapse: collapse;
+        text-decoration: none;
+        border-style:hidden;
+        font-style: normal;
+        width: 100%;
+    }
     td {
-        border: 1px solid rgba(var(--foreground-accent-color),0.3);
+        border: 1px solid;
+        border-style: inset;
+        border: 1px dotted;
+        @apply border-primary-700-200-token;
         padding: 0.3em;
         text-align: left;
         vertical-align: top;
         overflow-y: clip;
-        &:nth-child(1) {
+        &:nth-child(2) {
+            border-right-width: 0;
+        }
+        &:first-child {
+            border-left-width: 0;
             font-size: 0.8em;
             width: 10em;
             text-align: right;
@@ -77,5 +91,8 @@
     }
     tr {
         transition: height 0.5s;
+    }
+    tr:last-child td {
+        border-bottom-width: 0;
     }
 </style>

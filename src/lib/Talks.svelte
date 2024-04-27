@@ -43,23 +43,32 @@ as talk}
     table {
         border-collapse: collapse;
         text-decoration: none;
+        border-style:hidden;
         font-style: normal;
         width: 100%;
     }
     th {
-        border-bottom: 2px solid rgba(var(--foreground-accent-color),0.3);
+        border-bottom: 2px solid;
+        border-style: inset;
+        @apply border-primary-900-50-token;
         padding-bottom: 1em;
         padding-top: 1em;
         text-align: center;
-        background-color: rgba(var(--foreground-accent-color),0.1);
+        @apply bg-surface-700-200-token;
     }
     td {
-        border: 1px solid rgba(var(--foreground-accent-color),0.3);
+        border-style: inset;
+        border: 1px dotted;
+        @apply border-primary-700-200-token;
         padding: 0.3em;
         text-align: left;
         vertical-align: top;
         overflow-y: clip;
+        &:first-child {
+            border-left-width: 0;
+        }
         &:nth-child(2) {
+            border-right-width: 0;
             font-size: 0.8em;
             width: 12em;
             .event {
@@ -89,5 +98,8 @@ as talk}
     }
     tr {
         transition: height 0.5s;
+    }
+    tr:last-child td {
+        border-bottom-width: 0;
     }
 </style>
