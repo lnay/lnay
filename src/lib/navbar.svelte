@@ -71,19 +71,17 @@
 		display: inline-block;
 		padding: .25rem 0;
 		font-weight: 700;
-		@apply text-primary-400-500-token;
+		@apply text-surface-400-500-token;
 		background-color: transparent;
 		border-bottom: none;
 
 		div.underline {
 			height: .25rem;
-			background-color: blue;
+			@apply bg-primary-500;
 			width: 100%;
 		}
 		&:hover, &:focus {
-			&:not(.active) {
-				@apply text-primary-50-900-token;
-			}
+			@apply text-surface-900-50-token;
 		}
 	}
 
@@ -92,7 +90,7 @@
 	}
 
 	nav .active {
-		@apply text-primary-900-50-token;
+		@apply text-surface-900-50-token;
 		border-bottom: none;
 	}
 </style>

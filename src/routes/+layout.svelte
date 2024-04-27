@@ -1,6 +1,6 @@
 <script lang="ts">
 import "../app.pcss";
-import "./layout.scss";
+//import "./layout.scss";
 import Nav from "$lib/navbar.svelte";
 import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 </script>
