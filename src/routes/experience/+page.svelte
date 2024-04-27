@@ -10,8 +10,10 @@
   <meta name="description" content="Luke Naylor's academic related experience" />
 </svelte:head>
 
-<h1>Presentations</h1>
 
+<div class="flex relative place-content-evenly my-6 xl:m-10">
+<div class="flex-auto max-w-6xl px-0">
+<h1>Presentations</h1>
 <div bind:clientWidth={table_container_width}>
 {#if !split_tables}
 <table border="1" frame="void" rules="all">
@@ -63,6 +65,9 @@ Associate Fellowship of the Higher Education Academy
 
 <Teaching/>
 </table>
+</div>
+</div>
+
 <style lang="scss">
     div.horizontal-span {
         display: flex;

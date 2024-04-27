@@ -7,6 +7,8 @@
   <meta name="description" content="Home page of Luke Naylor's personal site" />
 </svelte:head>
 
+<div class="flex relative place-content-evenly my-6 xl:m-10">
+<div class="flex-auto max-w-2xl px-0">
 <h1>About Me</h1>
 <div class="pic-frame">
   <Picture meta={profile_pic}
@@ -49,6 +51,8 @@ Make sure to fill out the forms in the
 <a href="https://glams-professional-skills.github.io/website/announcements/launch/">launch announcement</a>
 if wanting to take part.
 </p>
+</div>
+</div>
 
 <style lang="scss">
 .pic-frame {

@@ -1,5 +1,6 @@
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
+import { lukideanTheme } from './src/lukidean-theme.ts';
 
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
@@ -20,7 +21,7 @@ const config = {
 	},
 	plugins: [
 		skeleton({
-			themes: { preset: [ "hamlindigo" ] }
+			themes: { preset: [ "hamlindigo" ], custom: [ lukideanTheme ] }
 		})
 	]
 } satisfies Config;

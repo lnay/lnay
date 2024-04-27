@@ -2,16 +2,16 @@
 import { TableOfContents, tocCrawler } from '@skeletonlabs/skeleton';
 </script>
 
-<div class="layout-docs page-padding flex items-start gap-10 doc-shell relative">
-<div id="page" class="layout-docs-content page-container-aside" style="scrollbar-gutter: auto;">
+<div class="flex items-start gap-10 relative xl:m-10 xl:place-content-around">
+<div id="page" class="" style="scrollbar-gutter: auto;">
 <main
 	id="page-content"
-	class="flex-auto"
+	class="flex-auto xl:max-w-6xl"
 	use:tocCrawler={{ mode: 'generate', scrollTarget: "#page" }}
 >
 <slot />
 </main>
 </div>
-<aside class="layout-cols-aside sticky top-10 hidden xl:block space-y-4 w-72">
+<aside class="sticky top-10 hidden xl:block space-y-4 w-max">
 <TableOfContents />
 </div>

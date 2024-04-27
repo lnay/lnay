@@ -6,6 +6,8 @@ const WEBAPP_URL = "https://pseudowalls.gitlab.io/webapp/tilt.leptos/";
   <meta name="description" content="Section of Luke Naylor's personal site about using programming libraries for computing possibilities for walls of tilt Bridgeland stabilities on Picard rank 1 surfaces." />
 </svelte:head>
 
+<div class="flex relative place-content-evenly my-6 xl:m-10">
+<div class="flex-auto max-w-6xl px-0">
 {@html marked(`
 # Wall Finding
 
@@ -36,6 +38,8 @@ There's a couple of ways to use these computations outside the webapp:
 <h2>WebApp <a href={WEBAPP_URL}>[fullscreen]</a></h2>
 
 <iframe src={WEBAPP_URL} title="description"></iframe> 
+</div>
+</div>
 
 <style lang="scss">
     iframe {

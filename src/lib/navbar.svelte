@@ -5,7 +5,7 @@
 	let [send, receive] = crossfade({
 		duration: (d) => Math.sqrt(d * 200),
 
-		fallback(node, params) {
+		fallback(node, _params) {
 			const style = getComputedStyle(node);
 			const transform = style.transform === 'none' ? '' : style.transform;
 
@@ -71,7 +71,7 @@
 		display: inline-block;
 		padding: .25rem 0;
 		font-weight: 700;
-		color: rgba(0,0,0, .7);
+		@apply text-primary-400-500-token;
 		background-color: transparent;
 		border-bottom: none;
 
@@ -82,7 +82,7 @@
 		}
 		&:hover, &:focus {
 			&:not(.active) {
-				color: black;
+				@apply text-primary-50-900-token;
 			}
 		}
 	}
@@ -92,7 +92,7 @@
 	}
 
 	nav .active {
-		color: black;
+		@apply text-primary-900-50-token;
 		border-bottom: none;
 	}
 </style>
