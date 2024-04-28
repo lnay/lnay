@@ -1,9 +1,32 @@
 <script lang="ts">
-import blogpost from "$content/LaTeX-tricks/preamble-precompilation.md?raw";
-import { marked } from 'marked';
+import preamble_precomp from "$content/LaTeX-tricks/preamble-precompilation.md?raw";
+import latexmk from "$content/LaTeX-tricks/latexmk.md?raw";
+
+import MdPost from "$lib/MdPost.svelte";
+
+const SLUG_TO_POST = {
+    "preamble-compilation" : {
+        "type" : "markdown",
+        "path" : "$content/LaTeX-tricks/preamble-precompilation.md",
+        "content" : preamble_precomp
+    },
+    "latexmk" : {
+        "type" : "markdown",
+        "path" : "$content/LaTeX-tricks/latexmk.md",
+        "content" : latexmk
+    }
+};
+
+let slug = "latexmk";
 </script>
+
 <svelte:head>
   <meta name="description" content="Blog section of Luke Naylor's personal site" />
 </svelte:head>
 
-{@html marked(blogpost)}
+{#if SLUG_TO_POST[slug]}
+<MdPost blogpost={SLUG_TO_POST[slug]["content"]} path={SLUG_TO_POST[slug]["path"]}/>
+{:else}
+not found
+{/if}
+
