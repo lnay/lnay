@@ -15,3 +15,12 @@ import { TableOfContents, tocCrawler } from '@skeletonlabs/skeleton';
 <aside class="sticky top-10 hidden xl:block space-y-4 w-max">
 <TableOfContents />
 </div>
+
+<style lang="scss">
+main pre {
+    @apply pre;
+}
+main code {
+    @apply code;
+}
+</style>
