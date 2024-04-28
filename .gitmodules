@@ -1,0 +1,3 @@
+[submodule "src/content/LaTeX-tricks"]
+	path = src/content/LaTeX-tricks
+	url = https://github.com/lnay/LaTeX-tricks.git

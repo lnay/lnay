@@ -22,7 +22,8 @@ const config = {
 		},
 
 		alias: {
-			$data: 'src/data'
+			$data: 'src/data',
+			$content: 'src/content'
 		}
 	}
 };
