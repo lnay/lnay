@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {talks} from "$data/Talks.json";
+import {talks} from "$data/Talks.json";
 </script>
 
 <tbody>
@@ -28,7 +28,7 @@ as talk}
             </details>
         </td>
         <td
-        class="border-primary-600 p-2 border-dotted border text-left align-top overflow-y-clip border-r-0 w-min text-sm"
+        class="border-primary-600 p-2 border-dotted border text-left align-top overflow-y-clip border-r-0 text-sm w-32"
         >
             {#each talk.event as event}
             <div>
