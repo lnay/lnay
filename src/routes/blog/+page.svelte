@@ -15,6 +15,9 @@
     <li>
     <a href="/blog/preamble-compilation">Preamble precompilation</a>
     </li>
+    <li>
+    <a href="/blog/sagetex">Using SageTeX in a sane way</a>
+    </li>
 </ul>
 
 </div>
