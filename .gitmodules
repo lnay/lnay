@@ -1,3 +1,6 @@
 [submodule "src/content/LaTeX-tricks"]
 	path = src/content/LaTeX-tricks
 	url = https://github.com/lnay/LaTeX-tricks.git
+[submodule "src/content/sagetex-blog"]
+	path = src/content/sagetex-blog
+	url = https://github.com/lnay/sagetex-blog.git
