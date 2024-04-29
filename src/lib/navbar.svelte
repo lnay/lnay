@@ -37,7 +37,7 @@ let nav_items = [
     {
         route: "/pseudowalls",
         name: "Pseudowalls"
-    },
+    }/*,
     {
         route: "/blog",
         name: "Blog"
