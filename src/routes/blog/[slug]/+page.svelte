@@ -1,7 +1,7 @@
 <script lang="ts">
 import preamble_precomp from "$content/LaTeX-tricks/preamble-precompilation.md?raw";
 import latexmk from "$content/LaTeX-tricks/latexmk.md?raw";
-import sagetex from "$content/sagetex-blog/thought.md?raw";
+import sagetex from "$content/sagetex-blog/README.md?raw";
 
 import MdPost from "$lib/MdPost.svelte";
 
@@ -9,7 +9,7 @@ const SLUG_TO_POST = {
     "sagetex" : {
         "type" : "markdown",
         "name": "SaneTex",
-        "path" : "$content/sagetex-blog/thought.md?raw",
+        "path" : "$content/sagetex-blog/README.md?raw",
         "content" : sagetex
     },
     "preamble-compilation" : {
