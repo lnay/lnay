@@ -2,6 +2,7 @@
 import preamble_precomp from "$content/LaTeX-tricks/preamble-precompilation.md?raw";
 import latexmk from "$content/LaTeX-tricks/latexmk.md?raw";
 import sagetex from "$content/sagetex-blog/README.md?raw";
+import nbappendix from "$content/sagetex-blog/notebook-appendix.md?raw";
 
 import MdPost from "$lib/MdPost.svelte";
 
@@ -11,6 +12,12 @@ const SLUG_TO_POST = {
         "name": "SaneTex",
         "path" : "$content/sagetex-blog/README.md?raw",
         "content" : sagetex
+    },
+    "nb-preamble" : {
+        "type" : "markdown",
+        "name": "Jupyter Notebook Preamble",
+        "path" : "$content/sagetex-blog/notebook-appendix.md?raw",
+        "content" : nbappendix
     },
     "preamble-compilation" : {
         "type" : "markdown",
