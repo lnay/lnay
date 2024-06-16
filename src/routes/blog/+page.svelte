@@ -13,19 +13,20 @@ import Picture from "$lib/Picture.svelte";
     <a
         href="/blog/latexmk"
         class="card card-hover p-4 pb-0 text-center overflow-clip align-baseline h4">
-    <h4>Using LaTeXmk (intentionally)</h4>
+    Using LaTeXmk (intentionally)
     <img src="/latex.png" alt="" class="h-full mx-auto">
     </a>
     <a
         href="/blog/nb-preamble"
         class="card card-hover p-4 text-center md:row-span-2 overflow-clip align-baseline h3">
     Adding Jupyter Notebook to appendix
+    <img src="/jupytex.svg" alt=""  class="h-full mt-4 mx-auto" style="object-fit: cover;">
     </a>
     <a
         href="/blog/sagetex"
         class="card card-hover p-4 text-center md:row-span-2 overflow-clip align-baseline h3">
     Using SageTeX in a sane way
-    <img src="/sage.svg" alt=""  class="h-full mt-11 mx-auto" style="object-fit: cover;">
+    <img src="/sage.svg" alt=""  class="h-full mt-4 mx-auto" style="object-fit: cover;">
     </a>
     <a
         href="/blog/preamble-compilation"
