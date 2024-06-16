@@ -21,8 +21,8 @@ let [send, receive] = crossfade({
 });
 
 import { page } from '$app/stores';
-let pagepath: string;
-$: pagepath = $page.url.pathname;
+let pagepathroot: string;
+$: pagepathroot = $page.url.pathname.replace(/(?<=.)\/.*/,'');
 
 
 let nav_items = [
@@ -37,11 +37,11 @@ let nav_items = [
     {
         route: "/pseudowalls",
         name: "Pseudowalls"
-    }/*,
+    },
     {
         route: "/blog",
         name: "Blog"
-    }
+    },
     /*{
         route: "/contact",
         name: "Contact"
@@ -54,11 +54,11 @@ let nav_items = [
     {#each nav_items as { route, name}}
         <a
             class="text-surface-500-400-token hover:text-surface-900-50-token inline-block px-1 font-bold "
-            class:active={pagepath===route}
+            class:active={pagepathroot===route}
             aria-current="page"
             href="{route}">
             {name}
-        {#if pagepath==route}
+        {#if pagepathroot==route}
         <div
             class="bg-primary-500 h-1 w-full"
             in:receive={{ key: 1 , duration: 350}}
