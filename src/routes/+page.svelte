@@ -2,6 +2,7 @@
   import Picture from "$lib/Picture.svelte";
   import Socials from "$lib/Socials.svelte";
   import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
+  import Home from "./Home.md";
 </script>
 <svelte:head>
   <meta name="description" content="Home page of Luke Naylor's personal site" />
@@ -17,32 +18,8 @@
   <Socials/>
 </div>
 
-<p>
-I am a PhD student in the
-<a target="_blank" href="https://www.maths.ed.ac.uk/">School of Mathematics</a>
-at the
-<a target="_blank" href="https://www.ed.ac.uk/">University of Edinburgh</a>,
-supervised by
-<a target="_blank" href="https://www.ed.ac.uk/profile/antony-maciocia">Prof. Antony Maciocia</a>.
-In the past I was a software engineer on the compiler team at (formally)
-<a target="_blank" href="https://www.opentext.com/microfocus">Micro Focus</a>
-(now the
-<abbr title="Application Modernisation and Connectivity (moving COBOL applications off mainframes)">
-AMC
-</abbr> division of
-<del><a target="_black" href="https://www.opentext.com/">OpenText</a></del>
-<a target="_black" href="https://www.rocketsoftware.com/" >Rocket Software</a>
-).
-</p>
+<Home />
 
-<p>
-I study walls on Bridgeland stability conditions for complexes of coherent
-sheaves on Picard Rank 1 surfaces and threefolds.
-This is an area of Algebraic Geometry.
-At the moment, I'm interested in automating methods for finding walls, find out more
-about this on the
-<a href="pseudowalls">Pseudowalls page</a>.
-</p>
 </div>
 </div>
 
