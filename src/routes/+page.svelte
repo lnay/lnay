@@ -43,14 +43,6 @@ At the moment, I'm interested in automating methods for finding walls, find out 
 about this on the
 <a href="pseudowalls">Pseudowalls page</a>.
 </p>
-
-<p>
-To find out about the mathematician's tech-skills workshop I'm running for Edinburgh/Herriot-Watt/Glasgow,
-check out <a href="https://glams-professional-skills.github.io/website/">its course page</a>.
-Make sure to fill out the forms in the
-<a href="https://glams-professional-skills.github.io/website/announcements/launch/">launch announcement</a>
-if wanting to take part.
-</p>
 </div>
 </div>
 
