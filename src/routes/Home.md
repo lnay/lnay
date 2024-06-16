@@ -6,10 +6,8 @@ supervised by
 [Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia)
 In the past I was a software engineer on the compiler team at (formally)
 [Micro Focus](https://www.opentext.com/microfocus)
-(now the
-<abbr title="Application Modernisation and Connectivity (moving COBOL applications off mainframes)">
-AMC
-</abbr> division of
+(now the <abbr title="Application Modernisation and Connectivity (moving COBOL applications off mainframes)">AMC</abbr>
+division of
 ~~[OpenText](https://www.opentext.com/)~~
 [Rocket Software](https://www.rocketsoftware.com/)
 ).
