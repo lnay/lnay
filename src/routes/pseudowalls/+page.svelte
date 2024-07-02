@@ -46,16 +46,10 @@ There's a couple of ways to use these computations outside the webapp:
 
 <h2>WebApp <a href={WEBAPP_URL}>[fullscreen]</a></h2>
 
-<iframe src={WEBAPP_URL} title="description"></iframe> 
+<iframe
+    src={WEBAPP_URL}
+    title="external WebApp for finding Pseudowalls for Chern characters on a Principally polarised abelian surface"
+    class="w-full min-h-screen h-auto border-none bg-surface-900"
+></iframe>
 </div>
 </div>
-
-<style lang="scss">
-    iframe {
-        width: 100%;
-        border: none;
-        min-height: 100vh;
-        height: auto;
-        background-color: rgb(var(--color-surface-900));
-    }
-</style>
