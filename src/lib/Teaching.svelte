@@ -5,10 +5,10 @@
 {#each courses as course}
     <tr>
         <td
-        class="border-primary-600 p-2 border-dotted border align-top overflow-y-clip border-l-0 text-sm w-40 text-right pb-0 relative"
+        class="border-primary-600 p-2 border-dotted border align-top overflow-y-clip border-l-0 text-sm w-40 text-right p-0 relative"
         >
             <ul
-            class="inline-block mb-0 w-max pl-0"
+            class="inline-block my-0 w-max pl-0"
             >
             {#each course.tutoring.sort().reverse() as t}
                 <li
