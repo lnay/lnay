@@ -41,25 +41,27 @@ for(let i = 0; i < entries.length; i += 2)
 }
 </script>
 
-<div class="socials-container">
+<div class="w-full mt-1">
 {#each entry_pairs as [entry1, entry2]}
-  <div class="social-link">
+  <div class="min-w-max float-left mx-1 h-6">
       <a href={entry1.url}
         target="_blank"
+        class="font-light no-underline"
         >
-      <div class="icon">
+      <div class="inline-block w-4 align-middle h-8">
       <Icon data="{entry1.icon}" scale={0.8}/>
       </div>
       {entry1.label}
       </a>
   </div>
   {#if entry2}
-  <div class="social-link">
+  <div class="min-w-max float-right mx-1 h-6">
       <a href={entry2.url}
         target="_blank"
+        class="font-light no-underline"
         >
       {entry2.label}
-      <div class="icon">
+      <div class="inline-block w-4 align-middle h-8">
       <Icon data="{entry2.icon}" scale={0.8}/>
       </div>
       </a>
@@ -67,34 +69,3 @@ for(let i = 0; i < entries.length; i += 2)
   {/if}
 {/each}
 </div>
-
-<style lang="scss">
-.socials-container {
-  width: 100%;
-  $margin: 0.3em;
-  margin-top: $margin;
-
-  .social-link {
-    min-width: max-content;
-    &:nth-child(even) {
-      float: right;
-      margin-right: $margin;
-    }
-    &:nth-child(odd) {
-      float: left;
-      margin-right: 2 * $margin;
-      margin-left: $margin;
-    }
-    .icon {
-      display: inline-block;
-      width: 1.2em;
-      height: 2em;
-      vertical-align: middle;
-    }
-  }
-  a {
-    font-weight: lighter;
-    font-style: normal;
-  }
-}
-</style>
