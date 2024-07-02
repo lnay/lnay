@@ -1,6 +1,9 @@
 <script lang="ts">
 import PseudoWallsContent from './PseudoWallsContent.md';
 const WEBAPP_URL = "https://pseudowalls.gitlab.io/webapp/tilt.leptos/";
+
+import { crum } from "$lib/stores.js";
+crum.set("");
 </script>
 <svelte:head>
   <meta name="description" content="Section of Luke Naylor's personal site about using programming libraries for computing possibilities for walls of tilt Bridgeland stabilities on Picard rank 1 surfaces." />

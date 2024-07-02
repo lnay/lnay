@@ -3,6 +3,9 @@
   import Socials from "$lib/Socials.svelte";
   import profile_pic from "$lib/assets/infront_poster.jpg?w=749;250;150&format=webp;avif;jpg&as=metadata";
   import Home from "./Home.md";
+
+  import { crum } from "$lib/stores.js";
+  crum.set("");
 </script>
 <svelte:head>
   <meta name="description" content="Home page of Luke Naylor's personal site" />

@@ -2,7 +2,14 @@
 import "../app.pcss";
 //import "./layout.scss";
 import Nav from "$lib/navbar.svelte";
+import { crum } from "$lib/stores.js";
 import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+
+let crum_value = "";
+
+crum.subscribe((value) => {
+	crum_value = value;
+});
 </script>
 
 <svelte:head>
@@ -13,14 +20,20 @@ import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<img src="/favicon.svg" style="height:1em" alt="logo">
-			</svelte:fragment>
-			Luke Naylor
-			<div style="display: inline-block; margin-left: 2em;">
-			<LightSwitch rounded="rounded-token" />
-			</div>
-			<svelte:fragment slot="trail">
+				<img src="/favicon.svg" class="h-4 mr-4" alt="logo">
 				<Nav />
+			</svelte:fragment>
+				{#if crum_value != ""}		
+				<ol class="breadcrumb list-none pl-3 my-0 pb-1" >
+					<li class="crumb-separator" aria-hidden>&rsaquo;</li>
+					<li class="crumb">{crum_value}</li>
+				</ol>
+				{/if}		
+			<svelte:fragment slot="trail">
+				<div class="inline-block mr-8">
+				Luke Naylor
+				</div>
+				<LightSwitch rounded="rounded-token" />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

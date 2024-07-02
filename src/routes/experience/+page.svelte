@@ -3,7 +3,9 @@
   import Talks from "$lib/Talks.svelte";
   import ReadingGroupTalks from "$lib/ReadingGroupTalks.svelte";
   import Posters from "$lib/Posters.svelte";
-  let table_container_width: number = 800;
+
+  import { crum } from "$lib/stores.js";
+  crum.set("");
 </script>
 <svelte:head>
   <meta name="description" content="Luke Naylor's academic related experience" />

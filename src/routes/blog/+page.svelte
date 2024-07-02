@@ -1,5 +1,8 @@
 <script lang="ts">
 import Picture from "$lib/Picture.svelte";
+
+import { crum } from "$lib/stores.js";
+crum.set("");
 </script>
 <svelte:head>
   <meta name="description" content="Blog section of Luke Naylor's personal site" />

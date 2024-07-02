@@ -5,6 +5,7 @@ import sagetex from "$content/sagetex-blog/README.md?raw";
 import nbappendix from "$content/sagetex-blog/notebook-appendix.md?raw";
 
 import MdPost from "$lib/MdPost.svelte";
+import { crum } from "$lib/stores.js";
 
 const SLUG_TO_POST = {
     "sagetex" : {
@@ -34,6 +35,8 @@ const SLUG_TO_POST = {
 };
 
 export let data;
+
+crum.set(SLUG_TO_POST[data.slug]["name"]);
 </script>
 
 <svelte:head>
@@ -41,11 +44,6 @@ export let data;
 </svelte:head>
 
 {#if SLUG_TO_POST[data.slug]}
-<ol class="breadcrumb list-none">
-	<li class="crumb"><a class="anchor" href="/blog">Blog</a></li>
-	<li class="crumb-separator" aria-hidden>&rsaquo;</li>
-	<li class="crumb">{SLUG_TO_POST[data.slug].name}</li>
-</ol>
 <MdPost blogpost={SLUG_TO_POST[data.slug]["content"]} path={SLUG_TO_POST[data.slug]["path"]}/>
 {:else}
 not found {data.slug}
