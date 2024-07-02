@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store';
 
-export const crum = writable("crum");
+export const crum = writable("");
 
