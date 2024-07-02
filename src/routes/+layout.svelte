@@ -4,6 +4,7 @@ import "../app.pcss";
 import Nav from "$lib/navbar.svelte";
 import { crum } from "$lib/stores.js";
 import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+import { fly } from 'svelte/transition';
 
 let crum_value = "";
 
@@ -20,11 +21,13 @@ crum.subscribe((value) => {
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
+				<a href="/" class="w-6">
 				<img src="/favicon.svg" class="h-4 mr-4" alt="logo">
+				</a>
 				<Nav />
 			</svelte:fragment>
 				{#if crum_value != ""}		
-				<ol class="breadcrumb list-none pl-3 my-0 pb-1" >
+				<ol class="breadcrumb list-none pl-3 my-0 pb-1" transition:fly={{x:-15}} >
 					<li class="crumb-separator" aria-hidden>&rsaquo;</li>
 					<li class="crumb">{crum_value}</li>
 				</ol>
