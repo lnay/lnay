@@ -4,7 +4,6 @@
   import ReadingGroupTalks from "$lib/ReadingGroupTalks.svelte";
   import Posters from "$lib/Posters.svelte";
   let table_container_width: number = 800;
-  $: split_tables = (table_container_width > 800)? true: false;
 </script>
 <svelte:head>
   <meta name="description" content="Luke Naylor's academic related experience" />
@@ -14,26 +13,12 @@
 <div class="flex relative place-content-evenly my-6 xl:m-10">
 <div class="flex-auto max-w-6xl px-0">
 <h1>Presentations</h1>
-<div bind:clientWidth={table_container_width}>
-{#if !split_tables}
+<div>
 <table border="1" frame="void" rules="all">
 	<Talks/>
 	<ReadingGroupTalks/>
 	<Posters/>
 </table>
-{:else}
-<div class="horizontal-span">
-<table border="1" frame="void" rules="all">
-	<Talks/>
-</table>
-<table border="1" frame="void" rules="all">
-	<ReadingGroupTalks/>
-</table>
-</div>
-<table border="1" frame="void" rules="all">
-	<Posters/>
-</table>
-{/if}
 </div>
 
 <h1>Teaching</h1>
