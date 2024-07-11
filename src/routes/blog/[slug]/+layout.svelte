@@ -18,3 +18,30 @@ import { TableOfContents, tocCrawler } from '@skeletonlabs/skeleton';
 <TableOfContents />
 </aside>
 </div>
+
+<style lang="scss">
+	:global(main#page pre) {
+		&::before {
+			display: block;
+			color:rgba(255, 255, 255, 0.25);
+			margin-bottom: 0.7rem;
+			font-weight: 600;
+		}
+		&:has(> code.language-latex)::before {
+			content: "LaTeX";
+		}
+		&:has(> code.language-bash)::before {
+			content: "Shell";
+		}
+		&:has(> code.language-make)::before,
+		&:has(> code.language-Makefile)::before {
+			content: "Makefile";
+		}
+		&:has(> code.language-python)::before {
+			content: "Python";
+		}
+		&:has(> code.language-perl)::before {
+			content: "Perl";
+		}
+	}
+</style>
