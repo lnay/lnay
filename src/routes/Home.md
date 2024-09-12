@@ -3,7 +3,10 @@ I am a PhD student in the
 at the
 [University of Edinburgh](https://www.ed.ac.uk/)
 supervised by
-[Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia)
+[Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia).
+My thesis "Criterion for the accumulation of ν-walls", has been submitted
+and is pending examination.
+
 In the past I was a software engineer on the compiler team at (formally)
 [Micro Focus](https://www.opentext.com/microfocus)
 (now the <abbr title="Application Modernisation and Connectivity (moving COBOL applications off mainframes)">AMC</abbr>
@@ -18,3 +21,7 @@ This is an area of Algebraic Geometry.
 At the moment, I'm interested in automating methods for finding walls, find out more
 about this on the
 [Pseudowalls page](pseudowalls).
+
+Currently, my most active open source work is on the
+[LaTeX extension](https://github.com/rzukic/zed-latex)
+for the [Zed](https://zed.dev/) editor.
