@@ -50,7 +50,7 @@ let nav_items = [
 	
 </script>
 
-<nav>
+<nav class="ml-4">
     {#each nav_items as { route, name}}
         <a
             class="text-surface-500-400-token hover:text-surface-900-50-token inline-block px-1 font-bold "
