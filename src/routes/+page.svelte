@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="flex relative place-content-evenly my-6 xl:m-10">
-<div class="flex-auto max-w-2xl px-0">
+<div class="flex-auto max-w-2xl px-0 indent-2">
 <h1>About Me</h1>
 <div class="pic-frame">
   <Picture meta={profile_pic}
