@@ -67,5 +67,6 @@ for(let i = 0; i < entries.length; i += 2)
       </a>
   </div>
   {/if}
+  <br>
 {/each}
 </div>
