@@ -12,7 +12,8 @@ at the
 supervised by
 [Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia).
 My thesis *"Criterion for the accumulation of ν-walls"*, has passed examination
-and is pending minor corrections, and will be publicly available in due course.
+and is pending minor corrections, and will officially published in due course.
+For now, the current state of the thesis can be found [here](https://git.ecdf.ed.ac.uk/personal-latex-documents/research/thesis/-/jobs/artifacts/main/raw/tex/main.pdf?job=build).
 My mathematical research was on the topic of walls on Bridgeland stability conditions for complexes of coherent
 sheaves on Picard rank 1 surfaces.
 This is an area of [Algebraic Geometry](https://en.wikipedia.org/wiki/Algebraic_geometry).
