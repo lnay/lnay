@@ -4,3 +4,6 @@
 [submodule "src/content/sagetex-blog"]
 	path = src/content/sagetex-blog
 	url = https://github.com/lnay/sagetex-blog.git
+[submodule "src/content/case-for-prototype-paradigm-blog"]
+	path = src/content/case-for-prototype-paradigm-blog
+	url = https://github.com/lnay/case-for-prototype-paradigm-blog.git

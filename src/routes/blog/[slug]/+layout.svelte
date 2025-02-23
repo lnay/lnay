@@ -1,47 +1,62 @@
 <script lang="ts">
-import { TableOfContents, tocCrawler } from '@skeletonlabs/skeleton';
+	import { TableOfContents, tocCrawler } from '@skeletonlabs/skeleton';
 </script>
+
 <svelte:head>
-	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet" />
 </svelte:head>
 
 <div class="flex items-start relative xl:mx-10 place-content-evenly my-6">
-<main
-	use:tocCrawler={{ mode: 'generate', scrollTarget: "#page" }}
-	id="page" class="w-full flex-auto max-w-4xl bottom-0 leading-relaxed text-xl"
-	style="font-family: Alegreya"
->
-<slot />
-</main>
-<aside class="sticky top-10 hidden 2xl:block space-y-4 max-w-96 bottom-0 overflow-y-scroll">
-<TableOfContents />
-</aside>
+	<main
+		use:tocCrawler={{ mode: 'generate', scrollTarget: '#page' }}
+		id="page"
+		class="w-full flex-auto max-w-4xl bottom-0 leading-relaxed text-xl"
+		style="font-family: Alegreya"
+	>
+		<slot />
+	</main>
+	<aside class="sticky top-10 hidden 2xl:block space-y-4 max-w-96 bottom-0 overflow-y-scroll">
+		<TableOfContents />
+	</aside>
 </div>
 
 <style lang="scss">
 	:global(main#page pre) {
 		&::before {
 			display: block;
-			color:rgba(255, 255, 255, 0.25);
+			color: rgba(255, 255, 255, 0.25);
 			margin-bottom: 0.7rem;
 			font-weight: 600;
 		}
 		&:has(> code.language-latex)::before {
-			content: "LaTeX";
+			content: 'LaTeX';
 		}
 		&:has(> code.language-bash)::before {
-			content: "Shell";
+			content: 'Shell';
 		}
 		&:has(> code.language-make)::before,
 		&:has(> code.language-Makefile)::before {
-			content: "Makefile";
+			content: 'Makefile';
 		}
 		&:has(> code.language-python)::before {
-			content: "Python";
+			content: 'Python';
 		}
 		&:has(> code.language-perl)::before {
-			content: "Perl";
+			content: 'Perl';
 		}
+		&:has(> code.language-js)::before {
+			content: 'JavaScript';
+		}
+		&:has(> code.language-lua)::before {
+			content: 'lua';
+		}
+	}
+	:global(main#page blockquote) {
+		border-left: 0.3em solid rgb(var(--color-primary-500) / 0.4);
+		padding-left: 0.6em;
+	}
+	:global(main#page li::marker) {
+		color: rgb(var(--color-primary-500));
 	}
 </style>
