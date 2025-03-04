@@ -15,7 +15,7 @@
 
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"
-			style="grid-template-rows: 10em 10em 10em"
+			style="grid-template-rows: auto auto 10em 10em 10em auto auto"
 		>
 			<a
 				href="/blog/latexmk"
@@ -50,10 +50,15 @@
 			</a>
 			<a
 				href="/blog/prototype-paradigm"
-				class="card card-hover p-4 text-center md:row-span-2 overflow-clip align-baseline h4"
+				class="card card-hover p-4 text-center md:row-span-2 overflow-clip align-baseline h3"
 			>
 				Case for Prototype Paradigm
-				<img src="" alt="" class="h-full mt-4 mx-auto" />
+				<img
+					src="/js_gt_ts.svg"
+					alt=""
+					class="h-full mt-4 mx-auto"
+					style="object-fit: cover;"
+				/>
 			</a>
 			<a
 				href="/blog/preamble-compilation"

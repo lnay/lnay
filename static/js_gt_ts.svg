@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="106mm"
+   viewBox="0 0 90 106"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="js_gt_ts.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.7349537"
+     inkscape:cx="396.62362"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="180.96378"
+       y="229.94646"
+       width="136.06299"
+       height="119.73543"
+       id="rect2" />
+    <rect
+       x="180.96378"
+       y="229.94646"
+       width="136.06299"
+       height="119.73543"
+       id="rect2-7" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#007acc;fill-opacity:1;fill-rule:evenodd;stroke-width:0.95;stroke-miterlimit:3.2;stroke-opacity:0.357394;paint-order:markers stroke fill"
+       id="rect1-5"
+       width="50.759998"
+       height="50.759998"
+       x="33.766251"
+       y="47.268753"
+       ry="6.1200004" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.31834675,0,0,0.3639557,-11.17034,-20.908278)"
+       id="text1"
+       style="font-weight:500;font-size:96px;font-family:'FiraMono Nerd Font Mono';-inkscape-font-specification:'FiraMono Nerd Font Mono Medium';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#007acc;fill-opacity:1;fill-rule:evenodd;stroke-width:3.59055;stroke-miterlimit:3.2;stroke-opacity:0.357394;paint-order:markers stroke fill"><tspan
+         x="180.96289"
+         y="316.74727"
+         id="tspan5"><tspan
+           style="fill:#ffffff"
+           id="tspan1">TS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:82.6465px;font-family:'FiraMono Nerd Font Mono';-inkscape-font-specification:'FiraMono Nerd Font Mono Medium';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f7df1e;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.09111;stroke-miterlimit:3.2;stroke-opacity:1;paint-order:markers stroke fill"
+       x="59.99728"
+       y="45.505173"
+       id="text4"
+       transform="matrix(0.84329558,0.39786375,-0.45760762,0.96992624,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="fill:#f7df1e;fill-opacity:1;stroke:#000000;stroke-width:3.09111;stroke-opacity:1"
+         x="59.99728"
+         y="45.505173">&gt;</tspan></text>
+    <rect
+       style="fill:#f7df1e;fill-opacity:1;fill-rule:evenodd;stroke-width:0.95;stroke-miterlimit:3.2;stroke-opacity:0.357394;paint-order:markers stroke fill"
+       id="rect1"
+       width="50.759998"
+       height="50.759998"
+       x="4.6366668"
+       y="5.3783331"
+       ry="6.1200004" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.31834675,0,0,0.36395571,-40.890395,-64.755242)"
+       id="text1-6"
+       style="font-weight:500;font-size:96px;font-family:'FiraMono Nerd Font Mono';-inkscape-font-specification:'FiraMono Nerd Font Mono Medium';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2-7);display:inline;fill:#007acc;fill-opacity:1;fill-rule:evenodd;stroke-width:3.59055;stroke-miterlimit:3.2;stroke-opacity:0.357394;paint-order:markers stroke fill"><tspan
+         x="180.96289"
+         y="316.74727"
+         id="tspan7"><tspan
+           style="fill:#24221c"
+           id="tspan6">JS</tspan></tspan></text>
+  </g>
+</svg>
