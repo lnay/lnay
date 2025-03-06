@@ -1,6 +1,7 @@
-I'm currently on a break sorting some home-life,
-not looking to work before February 2025.
-However, I am still active on some open source projects,
+I'm not currently in a job, to do some work on my house.
+In the near future I am interested in working to enable developers
+to express complex ideas for software/hardware at a higher level.
+Right now, I am still active on some open source projects,
 in particular the
 [LaTeX extension](https://github.com/rzukic/zed-latex)
 for the [Zed](https://zed.dev/) editor.
@@ -12,12 +13,14 @@ at the
 supervised by
 [Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia).
 My thesis *"Criterion for the accumulation of ν-walls"*, has passed examination
-and is pending minor corrections, and will officially published in due course.
-For now, the current state of the thesis can be found [here](https://git.ecdf.ed.ac.uk/personal-latex-documents/research/thesis/-/jobs/artifacts/main/raw/tex/main.pdf?job=build).
+and is pending minor corrections, and will officially be published in due course.
+For now, the current state of the thesis can be found
+[here](https://git.ecdf.ed.ac.uk/personal-latex-documents/research/thesis/-/jobs/artifacts/main/raw/tex/main.pdf?job=build).
 My mathematical research was on the topic of walls on Bridgeland stability conditions for complexes of coherent
 sheaves on Picard rank 1 surfaces.
 This is an area of [Algebraic Geometry](https://en.wikipedia.org/wiki/Algebraic_geometry).
-My main interest was in exposing and visualising computations in this very abstract topic of pure mathematics.
+My main interest was in exposing and visualising computations in this very abstract topic of pure mathematics,
+whilst heavily optimising the methods for the computations through various mathematical tricks.
 For those interested in this, see the
 [Pseudowalls page](pseudowalls).
 
