@@ -1,10 +1,10 @@
-I'm not currently in a job, to do some work on my house.
+I'm not currently working, to do some work on my house.
 In the near future I am interested in taking on a role around software tools.
 Right now, I am still active on some open source projects,
 in particular the
 (https://github.com/rzukic/zed-latex)
 for the [Zed](https://zed.dev/) editor,
-and a [language server](https://github.com/lnay/texpresso-lsp) for live preview
+and a [language server for live preview](https://github.com/lnay/texpresso-lsp)
 of LaTeX documents using [TeXpresso](https://github.com/let-def/texpresso).
 
 I was recently a PhD student in the
