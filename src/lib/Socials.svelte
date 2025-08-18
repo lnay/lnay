@@ -8,7 +8,7 @@ import file from 'svelte-awesome/icons/file';
 let entries = [
   {
     icon: file,
-    url: "https://gitlab.com/carracall/cv/-/jobs/artifacts/software/raw/CV.pdf?job=build",
+    url: "/LukeNaylorCV_Aug25.pdf",
     label: "CV"
   },
   {
@@ -18,13 +18,8 @@ let entries = [
   },
   {
     icon: gitlab,
-    url: "https://gitlab.com/carracall",
+    url: "https://gitlab.com/users/carracall/groups",
     label: "Maths Software"
-  },
-  {
-    icon: gitlab,
-    url: "https://git.ecdf.ed.ac.uk/s1511002/",
-    label: "Research"
   },
   {
     icon: github,

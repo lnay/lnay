@@ -1,5 +1,4 @@
-I'm not currently working, to do some work on my house.
-In the near future I am interested in taking on a role around software tools.
+My name is Luke Naylor, and I have recently completed my PhD and looking for a role around software tools.
 Right now, I am still active on some open source projects,
 in particular the
 [LaTeX extension](https://github.com/rzukic/zed-latex)
@@ -13,10 +12,8 @@ at the
 [University of Edinburgh](https://www.ed.ac.uk/)
 supervised by
 [Prof. Antony Maciocia](https://www.ed.ac.uk/profile/antony-maciocia).
-My thesis *"Criterion for the accumulation of ν-walls"*, has passed examination
-and is pending minor corrections, and will officially be published in due course.
-For now, the current state of the thesis can be found
-[here](https://git.ecdf.ed.ac.uk/personal-latex-documents/research/thesis/-/jobs/artifacts/main/raw/tex/main.pdf?job=build).
+My thesis *"Criterion for the accumulation of ν-walls"*, is published
+on the [Edinburgh Research Archive](https://era.ed.ac.uk/handle/1842/43553).
 My mathematical research was on the topic of walls on Bridgeland stability conditions for complexes of coherent
 sheaves on Picard rank 1 surfaces.
 This is an area of [Algebraic Geometry](https://en.wikipedia.org/wiki/Algebraic_geometry).
