@@ -12,6 +12,10 @@
 <div class="flex relative place-content-evenly my-6 xl:m-10">
 	<div class="flex-auto max-w-2xl px-0">
 		<h1>Posts</h1>
+		<p>
+		Please note that I will publish things here well before they are complete or polished.
+		Expect gaps and references to parts that have not been written yet.
+		</p>
 
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8"
