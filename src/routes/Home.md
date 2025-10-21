@@ -1,5 +1,5 @@
-My name is Luke Naylor, and I have recently completed my PhD and looking for a role around software tools.
-Right now, I am still active on some open source projects,
+My name is Luke Naylor, a research software engineer at ... (soon, pending final confirmations).
+I am active on some open source projects,
 in particular the
 [LaTeX extension](https://github.com/rzukic/zed-latex)
 for the [Zed](https://zed.dev/) editor,
