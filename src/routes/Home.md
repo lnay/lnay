@@ -1,4 +1,4 @@
-My name is Luke Naylor, a research software engineer at ... (soon, pending final confirmations).
+My name is Luke Naylor, a research software engineer at Huawei Research Centre Edinburgh working on the [Cangjie programming language](https://cangjie-lang.cn/).
 I am active on some open source projects,
 in particular the
 [LaTeX extension](https://github.com/rzukic/zed-latex)
