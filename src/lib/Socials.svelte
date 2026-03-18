@@ -8,7 +8,7 @@ import file from 'svelte-awesome/icons/file';
 let entries = [
   {
     icon: file,
-    url: "/LukeNaylorCV_Aug25.pdf",
+    url: "/LukeNaylorCV.pdf",
     label: "CV"
   },
   {
